@@ -361,9 +361,9 @@
 
 {/* Enhanced Music Experience Section */}
 <section className="mb-12">
-  <div className="relative bg-[#F3F2EE] rounded-lg p-12 flex items-center">
+  <div className="relative bg-[#F3F2EE] text-black  rounded-lg p-12 flex items-center">
     <div className="flex-1">
-      <p className="text-gray-600 mb-2">Categories</p>
+      <p className="text-black-600 mb-2">Categories</p>
       <h2 className="text-4xl font-bold mb-8">
         Enhance Your<br />Music Experience
       </h2>
@@ -436,7 +436,7 @@
         price: "100",
         rating: 4,
         reviews: 35,
-        new: false
+        new: true
       },
       {
         img: parfum,
@@ -444,7 +444,7 @@
         price: "360",
         rating: 4,
         reviews: 95,
-        new: false
+        new: true
       },
       {
         img: rapllauren,
@@ -452,7 +452,7 @@
         price: "700",
         rating: 5,
         reviews: 325,
-        new: false
+        new: true
       },
       {
         img: samba,
@@ -460,7 +460,7 @@
         price: "500",
         rating: 4,
         reviews: 145,
-        new: false
+        new: true
       },
       {
         img: stik,
@@ -476,7 +476,7 @@
         price: "1160",
         rating: 4,
         reviews: 35,
-        new: false
+        new: true
       },
       {
         img: rapllauren,
@@ -492,7 +492,7 @@
         price: "660",
         rating: 4,
         reviews: 55,
-        new: false
+        new: true
       }
     ].map((item, index) => (
       <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">
@@ -528,7 +528,7 @@
           </div>
           <span className="text-sm text-gray-500">({item.reviews})</span>
         </div>
-        {index  && (
+        {index  >-1 && (
            <button className="w-full mt-4 py-2 bg-[#C2A58C] text-white rounded-sm text-sm">
             Add To Cart
           </button>
