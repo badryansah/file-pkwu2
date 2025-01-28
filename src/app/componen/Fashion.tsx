@@ -9,24 +9,50 @@ import jaket2 from '@/app/aset/asetFashion/jaket2.png';
 import jaket3 from '@/app/aset/asetFashion/jaket3.png';
 import jaket4 from '@/app/aset/asetFashion/jaket4.png';
 import jaket5 from '@/app/aset/asetFashion/jaket5.png';
+
 import kaos1 from '@/app/aset/asetFashion/kaos1.png';
 import kaos2 from '@/app/aset/asetFashion/kaos2.png';
 import kaos3 from '@/app/aset/asetFashion/kaos3.png';
 import kaos4 from '@/app/aset/asetFashion/kaos4.png';
 import kaos5 from '@/app/aset/asetFashion/kaos5.png';
 import kaos6 from '@/app/aset/asetFashion/kaos6.png';
+
 import ohraga1 from '@/app/aset/asetFashion/olhraga1.png';
 import ohraga2 from '@/app/aset/asetFashion/olhraga2.png';
 import ohraga3 from '@/app/aset/asetFashion/olhraga3.png';
 import ohraga4 from '@/app/aset/asetFashion/olhraga4.png';
 import ohraga5 from '@/app/aset/asetFashion/olhraga5.png';
-import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
-import samba from '@/app/aset/adidas samba.jpg';  
-import Nike from '@/app/aset/nike.jpg';   
-import speaker from '@/app/aset/speaker.jpg';   
-import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
-import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
-import ps5 from '@/app/aset/ps5.jpg';
+
+import celana1 from '@/app/aset/asetFashion/celana1.png';
+import celana2 from '@/app/aset/asetFashion/celana2.png';
+import celana3 from '@/app/aset/asetFashion/celana3.png';
+import celana4 from '@/app/aset/asetFashion/celana4.png';
+import celana5 from '@/app/aset/asetFashion/celana5.png';
+
+import kacamata1 from '@/app/aset/asetFashion/kacamata1.png';
+import kacamata2 from '@/app/aset/asetFashion/kacamata2.png';
+import kacamata3 from '@/app/aset/asetFashion/kacamata3.png';
+import kacamata4 from '@/app/aset/asetFashion/kacamata4.png';
+import kacamata5 from '@/app/aset/asetFashion/kacamata5.png';
+
+import sendal1 from '@/app/aset/asetFashion/sendal1.png';
+import sendal2 from '@/app/aset/asetFashion/sendal2.png';
+import sendal3 from '@/app/aset/asetFashion/sendal3.png';
+import sendal4 from '@/app/aset/asetFashion/sendal4.png';
+import sendal5 from '@/app/aset/asetFashion/sendal5.png';
+
+import sepatu1 from '@/app/aset/asetFashion/sepatu1.png';
+import sepatu2 from '@/app/aset/asetFashion/sepatu2.png';
+import sepatu3 from '@/app/aset/asetFashion/sepatu3.png';
+import sepatu4 from '@/app/aset/asetFashion/sepatu4.png';
+import sepatu5 from '@/app/aset/asetFashion/sepatu5.png';
+
+import tas1 from '@/app/aset/asetFashion/tas1.png';
+import tas2 from '@/app/aset/asetFashion/tas2.png';
+import tas3 from '@/app/aset/asetFashion/tas3.png';
+import tas4 from '@/app/aset/asetFashion/tas4.png';
+import tas5 from '@/app/aset/asetFashion/tas5.png';
+
 
 import {
   IoMenu,
@@ -406,51 +432,51 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+           {  
+            img: tas1,  
+            name: "Black Backpack ",  
+            price: 120,  
+            originalPrice: 200,  
+            discount: 40,  
+            rating: 5,  
+            reviews: 88  
+          },  
+          {  
+            img: tas2,  
+            name: "Ruched Black Handbag",  
+            price: 130,  
+            originalPrice: 200,  
+            discount: 35,  
+            rating: 4,  
+            reviews: 75  
+          },  
+          {  
+            img: tas3,  
+            name: "Pink Ruched Shoulder Bag",  
+            price: 140,   
+            originalPrice: 200,  
+            discount: 30,  
+            rating: 5,  
+            reviews: 99  
+          },  
+          {  
+            img: tas4,  
+            name: "Black Shoulder Bag",  
+            price: 150,  
+            originalPrice: 200,  
+            discount: 25,  
+            rating: 4.5,  
+            reviews: 99  
+          },  
+          {  
+            img: tas5,  
+            name: "Floral Plush Shoulder Bag",  
+            price: 160,  
+            originalPrice: 200,  
+            discount: 25,  
+            rating: 4.5,  
+            reviews: 99  
+          }
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -501,50 +527,50 @@ function Fashion() {
           <div className="grid grid-cols-5 gap-6">  
             {[  
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
+                img: sendal1,  
+                name: "Pink Minimalist Sandals",  
+                price: 90,  
+                originalPrice: 150,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
+                img: sendal2,  
+                name: "Black Flip Flops",  
+                price: 130,  
+                originalPrice: 200,  
                 discount: 35,  
                 rating: 4,  
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
+                img: sendal3,  
+                name: "Beige Bow Sandals",  
+                price: 140,   
+                originalPrice: 200,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
+                img: sendal4,  
+                name: "Black Triple Strap Sandals",  
+                price: 150,  
+                originalPrice: 200,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
+                img: sendal5,  
+                name: "Brown Bow Sandals",  
+                price: 160,  
+                originalPrice: 200,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              }  
+              } 
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -596,50 +622,50 @@ function Fashion() {
           <div className="grid grid-cols-5 gap-6">  
             {[  
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
+                img: kacamata1,  
+                name: "Gold Frame Glasses",  
+                price: 120,  
+                originalPrice: 200,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
+                img: kacamata2,  
+                name: "Black Square Glasses",  
+                price: 130,  
+                originalPrice: 200,  
                 discount: 35,  
                 rating: 4,  
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
+                img: kacamata3,  
+                name: "Black Polarized Sunglasses",  
+                price: 140,   
+                originalPrice: 200,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
+                img: kacamata4,  
+                name: "Classic Black Sunglasses",  
+                price: 150,  
+                originalPrice: 200,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
+                img: kacamata5,  
+                name: "Aviator Black Sunglasses",  
+                price: 160,  
+                originalPrice: 200,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              }  
+              }            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -687,52 +713,54 @@ function Fashion() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+            {
+            [
+              {
+                img: celana1,
+                name: "Star-Pattern Jeans",
+                price: 60,
+                originalPrice: 100,
+                discount: 40,
+                rating: 4.5,
+                reviews: 88,
+              },
+              {
+                img: celana2,
+                name: "Spider-Web Pants",
+                price: 65,
+                originalPrice: 100,
+                discount: 35,
+                rating: 4,
+                reviews: 75,
+              },
+              {
+                img: celana3,
+                name: "Classic Black Jeans",
+                price: 70,
+                originalPrice: 100,
+                discount: 30,
+                rating: 5,
+                reviews: 99,
+              },
+              {
+                img: celana4,
+                name: "Comfort Fit Trousers",
+                price: 75,
+                originalPrice: 100,
+                discount: 25,
+                rating: 4.5,
+                reviews: 99,
+              },
+              {
+                img: celana5,
+                name: "Straight-Cut Jeans",
+                price: 75,
+                originalPrice: 100,
+                discount: 25,
+                rating: 4.5,
+                reviews: 99,
+              },
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -781,53 +809,54 @@ function Fashion() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
-            ].map((item, index) => (  
+            {[
+  {
+    img: sepatu1,
+    name: "Platform Converse",
+    price: 60,
+    originalPrice: 100,
+    discount: 40,
+    rating: 5,
+    reviews: 88,
+  },
+  {
+    img: sepatu2,
+    name: "Classic Converse High  ",
+    price: 65,
+    originalPrice: 100,
+    discount: 35,
+    rating: 4,
+    reviews: 75,
+  },
+  {
+    img: sepatu3,
+    name: "Nike Air Force 1",
+    price: 70,
+    originalPrice: 100,
+    discount: 30,
+    rating: 5,
+    reviews: 99,
+  },
+  {
+    img: sepatu4,
+    name: "Adidas Ozweego",
+    price: 75,
+    originalPrice: 100,
+    discount: 25,
+    rating: 4.5,
+    reviews: 99,
+  },
+  {
+    img: sepatu5,
+    name: "Nike Air Shadow",
+    price: 75,
+    originalPrice: 100,
+    discount: 25,
+    rating: 4.5,
+    reviews: 99,
+  },
+]
+.map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
                   <Image   
