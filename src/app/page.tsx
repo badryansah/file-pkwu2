@@ -1,18 +1,21 @@
 import React from "react";
-import Sign from "./componen/Sign";
-import Login from "./componen/Login";
-import Home from "./componen/Home";
+ import Sign from "./componen/Sign";
+ import Login from "./componen/Login";
+ import Home from "./componen/Home";
 import Fashion from "./componen/Fashion";
+ 
 import Gadget from "./componen/Gadget";
 import Profile from "./componen/Profile";
 import Checkout from "./componen/Checkout";
 import Keranjang from "./componen/Keranjang";
 import Produk from "./componen/Produk";
 import Tambahp from "./componen/Tambahp";
+
+
 function page() {
  return (
 <>
-<section className="pt-36 pb-32">
+ <section className="pt-36 pb-32">
   <Sign/>
 </section>
 
@@ -22,7 +25,7 @@ function page() {
 
 <section className="pt-36 -b-32">
   <Home/>
-</section>
+</section> 
 
 <section className="pt-36 -b-32">
   <Fashion/>
@@ -30,7 +33,7 @@ function page() {
 
 <section className="pt-36 -b-32">
   < Gadget/>
-</section>
+</section> */
 
 <section className="pt-36 -b-32">
   < Profile/>

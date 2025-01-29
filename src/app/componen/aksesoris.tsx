@@ -1,5 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react';  
+import Navbar from './Navbar'; // Import the Navbar component  
+import Image from 'next/image'; // Import the Next.js Image component  
+import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  
+import baju from '@/app/aset/Abercrombie’s $50 Knit Polos Have No Business Being This Good.jpg';  
+import jam from '@/app/aset/Christophe Arden CAF3001 MDBIPBA Jam Tangan Pria.jpg';  
+import tas from '@/app/aset/Clutch Handbag Pria - Tas tangan Clutch Pria _ Pouch dompet Pria ToWn.jpg'  
+import ipat from '@/app/aset/Ikat Pinggang Wanita Sabuk Square Kulit PU Leather Belt Fashion Korea.jpg';   
+import wobeg from '@/app/aset/MEDIUM AVA TRIOMPHE.jpg';  
+import celana from '@/app/aset/Carhartt WIP Landon Pant.jpg';  
+import dipeg from '@/app/aset/Prada Small Logo-plaque.jpg';  
+import shirt from '@/app/aset/Seek Graphic Tee - Litlookz Studio.jpg';  
+import hoodie from '@/app/aset/Oversized Hoodie Washed Grey.jpg';  
+import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
+import samba from '@/app/aset/adidas samba.jpg';  
+import Nike from '@/app/aset/nike.jpg';   
+import speaker from '@/app/aset/speaker.jpg';   
+import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
+import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
+import ps5 from '@/app/aset/ps5.jpg';
 import {
   IoMenu,
   IoSearch,
@@ -12,15 +31,9 @@ import {
   IoHeart,
   IoEye
 } from 'react-icons/io5';
-import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
-import samba from '@/app/aset/adidas samba.jpg';  
-import Nike from '@/app/aset/nike.jpg';   
-import speaker from '@/app/aset/speaker.jpg';   
-import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
-import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
-import ps5 from '@/app/aset/ps5.jpg';
 
-function Gadget() {
+// Define the Fashion component  
+function Fashion() {  
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}    
@@ -913,5 +926,5 @@ function Gadget() {
   </div>
   );
 }
-
-export default Gadget;
+  
+export default Fashion;  
