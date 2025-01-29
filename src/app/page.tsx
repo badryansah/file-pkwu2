@@ -4,6 +4,11 @@ import Login from "./componen/Login";
 import Home from "./componen/Home";
 import Fashion from "./componen/Fashion";
 import Gadget from "./componen/Gadget";
+import Profile from "./componen/Profile";
+import Checkout from "./componen/Checkout";
+import Keranjang from "./componen/Keranjang";
+import Produk from "./componen/Produk";
+import Tambahp from "./componen/Tambahp";
 function page() {
  return (
 <>
@@ -26,6 +31,27 @@ function page() {
 <section className="pt-36 -b-32">
   < Gadget/>
 </section>
+
+<section className="pt-36 -b-32">
+  < Profile/>
+</section>
+
+<section className="pt-36 -b-32">
+  < Checkout/>
+</section>
+
+<section className="pt-36 -b-32">
+  < Keranjang/>
+</section>
+
+<section className="pt-36 -b-32">
+  < Produk/>
+</section>
+
+<section className="pt-36 -b-32">
+  < Tambahp/>
+</section>
+
 
 </>
 
