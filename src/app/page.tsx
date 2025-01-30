@@ -15,41 +15,41 @@ import Tambahp from "./componen/Tambahp";
 function page() {
  return (
 <>
- <section className="pt-36 pb-32">
+ {/* <section className="pt-36 pb-32">
   <Sign/>
-</section>
+</section> */}
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   <Login/>
-</section>
+</section> */}
 
 <section className="pt-36 -b-32">
   <Home/>
-</section> 
+</section>  
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   <Fashion/>
-</section>
+</section> */}
 
 <section className="pt-36 -b-32">
   < Gadget/>
 </section> */
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   < Profile/>
-</section>
-
+</section> */}
+{/* 
 <section className="pt-36 -b-32">
   < Checkout/>
-</section>
+</section> */}
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   < Keranjang/>
-</section>
+</section> */}
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   < Produk/>
-</section>
+</section> */}
 
 <section className="pt-36 -b-32">
   < Tambahp/>

@@ -1,12 +1,26 @@
   import React from 'react';    
-  import Image from 'next/image';    
-  import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
-  import samba from '@/app/aset/adidas samba.jpg';  
-  import Nike from '@/app/aset/nike.jpg';   
-  import speaker from '@/app/aset/speaker.jpg';   
-  import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
-  import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
-  import  ps5 from '@/app/aset/ps5.jpg';   
+  import Image from 'next/image';
+  import Nike from '@/app/aset/nike.jpg';  
+  import speaker from '@/app/aset/speaker.jpg';  
+  import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';     
+  import foto1 from '@/app/aset/assetHome/1.png';
+  import foto2 from '@/app/aset/assetHome/2.png';
+  import foto3 from '@/app/aset/assetHome/3.png';
+  import foto4 from '@/app/aset/assetHome/4.png';
+  import foto5 from '@/app/aset/assetHome/5.png';
+  import foto6 from '@/app/aset/assetHome/6.png';
+  import foto7 from '@/app/aset/assetHome/7.png';
+  import foto8 from '@/app/aset/assetHome/8.png';
+  import foto9 from '@/app/aset/assetHome/9.png';
+  import foto10 from '@/app/aset/assetHome/10.png';
+  import foto11 from '@/app/aset/assetHome/11.png';
+  import foto12 from '@/app/aset/assetHome/12.png';
+  import foto13 from '@/app/aset/assetHome/13.png';
+  import foto14 from '@/app/aset/assetHome/14.png';
+  import foto15 from '@/app/aset/assetHome/15.png';
+  import foto16 from '@/app/aset/assetHome/16.png';
+  import foto17 from '@/app/aset/assetHome/17.png';
+  
   import {   
     IoMenu,  
     IoSearch,   
@@ -139,35 +153,35 @@
             <div className="grid grid-cols-5 gap-6">  
               {[  
                 {  
-                  img: stik,  
-                  name: "HAVIT HV-G92 Gamepad",  
-                  price:399,  
+                  img: foto1,  
+                  name: "Casio Exilim Camera",  
+                  price:200,  
                   originalPrice: 320,  
                   discount: 40,  
                   rating: 5,  
                   reviews: 88  
                 },  
                 {  
-                  img: stik,  
-                  name: "AK-900 Wired Keyboard",  
-                  price: 399,  
+                  img: foto2,  
+                  name: "Mac-Pro 2020",  
+                  price: 1299,  
                   originalPrice: 1960,  
                   discount: 35,  
                   rating: 4,  
                   reviews: 75  
                 },  
                 {  
-                  img: stik,  
-                  name: "IPS LCD Gaming Monitor",  
-                  price: 399,   
+                  img: foto3,  
+                  name: "HP Laptop",  
+                  price: 799,   
                   originalPrice: 370,  
                   discount: 30,  
                   rating: 5,  
                   reviews: 99  
                 },  
                 {  
-                  img: parfum,  
-                  name: "S-Series Comfort Chair",  
+                  img: foto4,  
+                  name: "Asus Gaming Keyboard",  
                   price: 399,  
                   originalPrice: 375,  
                   discount: 25,  
@@ -175,8 +189,8 @@
                   reviews: 99  
                 },  
                 {  
-                  img: rapllauren,  
-                  name: "S-Series Office Chair",  
+                  img: foto5,  
+                  name: "Brother Printer",  
                   price: 399,  
                   originalPrice: 375,  
                   discount: 25,  
@@ -290,7 +304,7 @@
             <div className="grid grid-cols-4 gap-6">  
               {[  
                 {  
-                  img: rapllauren,  
+                  img: foto6,  
                   name: "The north coat",  
                   price: "399",  
                   originalPrice: "360",  
@@ -298,7 +312,7 @@
                   reviews: 65  
                 },  
                 {  
-                  img: parfum,  
+                  img: foto7,  
                   name: "Gucci duffle bag",  
                   price: "399",  
                   originalPrice: "1160",  
@@ -306,7 +320,7 @@
                   reviews: 65  
                 },  
                 {  
-                  img: stik,  
+                  img: foto8,  
                   name: "RGB liquid CPU Cooler",  
                   price: "399",  
                   originalPrice: "170",  
@@ -314,7 +328,7 @@
                   reviews: 65  
                 },  
                 {  
-                  img: samba,  
+                  img: foto9,  
                   name: "Small BookSelf",  
                   price: "399",  
                   originalPrice: null,  
@@ -431,7 +445,7 @@
   <div className="grid grid-cols-4 gap-6">
     {[
       {
-        img: stik,
+        img: foto10,
         name: "Breed Dry Dog Food",
         price: "100",
         rating: 4,
@@ -439,7 +453,7 @@
         new: true
       },
       {
-        img: parfum,
+        img: foto11,
         name: "CANON EOS DSLR Camera",
         price: "360",
         rating: 4,
@@ -447,7 +461,7 @@
         new: true
       },
       {
-        img: rapllauren,
+        img: foto12,
         name: "ASUS FHD Gaming Laptop",
         price: "700",
         rating: 5,
@@ -455,7 +469,7 @@
         new: true
       },
       {
-        img: samba,
+        img: foto13,
         name: "Curology Product Set",
         price: "500",
         rating: 4,
@@ -463,7 +477,7 @@
         new: true
       },
       {
-        img: stik,
+        img: foto14,
         name: "Kids Electric Car",
         price: "960",
         rating: 5,
@@ -471,7 +485,7 @@
         new: true
       },
       {
-        img: parfum,
+        img: foto15,
         name: "Jr. Zoom Soccer Cleats",
         price: "1160",
         rating: 4,
@@ -479,7 +493,7 @@
         new: true
       },
       {
-        img: rapllauren,
+        img: foto16,
         name: "GP11 Shooter USB Gamepad",
         price: "660",
         rating: 4,
@@ -487,7 +501,7 @@
         new: true
       },
       {
-        img: samba,
+        img: foto17 ,
         name: "Quilted Satin Jacket",
         price: "660",
         rating: 4,
