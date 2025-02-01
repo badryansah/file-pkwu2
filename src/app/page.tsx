@@ -3,7 +3,7 @@ import React from "react";
  import Login from "./componen/Login";
  import Home from "./componen/Home";
 import Fashion from "./componen/Fashion";
- 
+import Aksesoris from "./componen/aksesoris";
 import Gadget from "./componen/Gadget";
 import Profile from "./componen/Profile";
 import Checkout from "./componen/Checkout";
@@ -23,17 +23,17 @@ function page() {
   <Login/>
 </section> */}
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   <Home/>
-</section>  
+</section>   */}
 
 {/* <section className="pt-36 -b-32">
   <Fashion/>
 </section> */}
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   < Gadget/>
-</section> */
+</section> */}
 
 {/* <section className="pt-36 -b-32">
   < Profile/>
@@ -51,11 +51,13 @@ function page() {
   < Produk/>
 </section> */}
 
-<section className="pt-36 -b-32">
+{/* <section className="pt-36 -b-32">
   < Tambahp/>
+</section> */}
+
+<section className="pt-36 -b-32">
+  <Aksesoris/>
 </section>
-
-
 </>
 
 )

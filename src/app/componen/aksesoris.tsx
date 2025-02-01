@@ -3,6 +3,50 @@ import Navbar from './Navbar'; // Import the Navbar component
 import Image from 'next/image'; // Import the Next.js Image component  
 import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  
+
+import aks from '@/app/aset/Aksesoris.png'; 
+
+import Aks1 from '@/app/aset/AssetAksesoris/1.png';
+import Aks2 from '@/app/aset/AssetAksesoris/2.png';
+import Aks3 from '@/app/aset/AssetAksesoris/3.png';
+import Aks4 from '@/app/aset/AssetAksesoris/4.png';
+import Aks5 from '@/app/aset/AssetAksesoris/5.png';
+import Aks6 from '@/app/aset/AssetAksesoris/6.png';
+import Aks7 from '@/app/aset/AssetAksesoris/7.png';
+import Aks8 from '@/app/aset/AssetAksesoris/8.png';
+import Aks9 from '@/app/aset/AssetAksesoris/9.png';
+import Aks10 from '@/app/aset/AssetAksesoris/10.png';
+import Aks11 from '@/app/aset/AssetAksesoris/11.png';
+import Aks12 from '@/app/aset/AssetAksesoris/12.png';
+import Aks13 from '@/app/aset/AssetAksesoris/13.png';
+import Aks14 from '@/app/aset/AssetAksesoris/14.png';
+import Aks15 from '@/app/aset/AssetAksesoris/15.png';
+import Aks16 from '@/app/aset/AssetAksesoris/16.png';
+import Aks17 from '@/app/aset/AssetAksesoris/17.png';
+import Aks18 from '@/app/aset/AssetAksesoris/18.png';
+import Aks19 from '@/app/aset/AssetAksesoris/19.png';
+import Aks20 from '@/app/aset/AssetAksesoris/20.png';
+import Aks21 from '@/app/aset/AssetAksesoris/21.png';
+import Aks22 from '@/app/aset/AssetAksesoris/22.png';
+import Aks23 from '@/app/aset/AssetAksesoris/23.png';
+import Aks24 from '@/app/aset/AssetAksesoris/24.png';
+import Aks25 from '@/app/aset/AssetAksesoris/25.png';
+import Aks26 from '@/app/aset/AssetAksesoris/26.png';
+import Aks27 from '@/app/aset/AssetAksesoris/27.png';
+import Aks28 from '@/app/aset/AssetAksesoris/28.png';
+import Aks29 from '@/app/aset/AssetAksesoris/29.png';
+import Aks30 from '@/app/aset/AssetAksesoris/30.png';
+import Aks31 from '@/app/aset/AssetAksesoris/31.png';
+import Aks32 from '@/app/aset/AssetAksesoris/32.png';
+import Aks33 from '@/app/aset/AssetAksesoris/33.png';
+import Aks34 from '@/app/aset/AssetAksesoris/34.png';
+import Aks35 from '@/app/aset/AssetAksesoris/35.png';
+import Aks36 from '@/app/aset/AssetAksesoris/36.png';
+import Aks37 from '@/app/aset/AssetAksesoris/37.png';
+import Aks38 from '@/app/aset/AssetAksesoris/38.png';
+import Aks39 from '@/app/aset/AssetAksesoris/39.png';
+import Aks40 from '@/app/aset/AssetAksesoris/40.png';
+
 import baju from '@/app/aset/Abercrombie’s $50 Knit Polos Have No Business Being This Good.jpg';  
 import jam from '@/app/aset/Christophe Arden CAF3001 MDBIPBA Jam Tangan Pria.jpg';  
 import tas from '@/app/aset/Clutch Handbag Pria - Tas tangan Clutch Pria _ Pouch dompet Pria ToWn.jpg'  
@@ -97,7 +141,7 @@ function Fashion() {
         {/* Hero Banner */}  
         <div className="rounded-lg overflow-hidden mb-8">  
           <Image   
-            src={Nike}  
+            src={aks}  
             alt="Nike shoes banner"  
             className="w-full h-[400px] object-cover"  
             width={1200}  
@@ -115,7 +159,7 @@ function Fashion() {
           <div className="grid grid-cols-5 gap-6">  
             {[  
               {  
-                img: stik,  
+                img: Aks1,  
                 name: "HAVIT HV-G92 Gamepad",  
                 price: 399,  
                 originalPrice: 320,  
@@ -124,7 +168,7 @@ function Fashion() {
                 reviews: 88  
               },  
               {  
-                img: stik,  
+                img: Aks2,  
                 name: "AK-900 Wired Keyboard",  
                 price: 399,  
                 originalPrice: 1960,  
@@ -133,7 +177,7 @@ function Fashion() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
+                img: Aks3,  
                 name: "IPS LCD Gaming Monitor",  
                 price: 399,   
                 originalPrice: 370,  
