@@ -1,5 +1,6 @@
   import React from 'react';    
   import Image from 'next/image';
+  import Navbar from "@/app/components/Navbar";
   import Nike from '@/app/aset/nike.jpg';  
   import speaker from '@/app/aset/speaker.jpg';  
   import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';     

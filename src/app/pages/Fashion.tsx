@@ -1,5 +1,59 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react';  
+import Navbar from '@/app/components/Navbar'; 
+import Image from 'next/image'; // Import the Next.js Image component  
+import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  
+import Baju from '@/app/aset/Fashion.png';
+import jaket1 from '@/app/aset/asetFashion/jaket1.png';
+import jaket2 from '@/app/aset/asetFashion/jaket2.png';
+import jaket3 from '@/app/aset/asetFashion/jaket3.png';
+import jaket4 from '@/app/aset/asetFashion/jaket4.png';
+import jaket5 from '@/app/aset/asetFashion/jaket5.png';
+
+import kaos1 from '@/app/aset/asetFashion/kaos1.png';
+import kaos2 from '@/app/aset/asetFashion/kaos2.png';
+import kaos3 from '@/app/aset/asetFashion/kaos3.png';
+import kaos4 from '@/app/aset/asetFashion/kaos4.png';
+import kaos5 from '@/app/aset/asetFashion/kaos5.png';
+import kaos6 from '@/app/aset/asetFashion/kaos6.png';
+
+import ohraga1 from '@/app/aset/asetFashion/olhraga1.png';
+import ohraga2 from '@/app/aset/asetFashion/olhraga2.png';
+import ohraga3 from '@/app/aset/asetFashion/olhraga3.png';
+import ohraga4 from '@/app/aset/asetFashion/olhraga4.png';
+import ohraga5 from '@/app/aset/asetFashion/olhraga5.png';
+
+import celana1 from '@/app/aset/asetFashion/celana1.png';
+import celana2 from '@/app/aset/asetFashion/celana2.png';
+import celana3 from '@/app/aset/asetFashion/celana3.png';
+import celana4 from '@/app/aset/asetFashion/celana4.png';
+import celana5 from '@/app/aset/asetFashion/celana5.png';
+
+import kacamata1 from '@/app/aset/asetFashion/kacamata1.png';
+import kacamata2 from '@/app/aset/asetFashion/kacamata2.png';
+import kacamata3 from '@/app/aset/asetFashion/kacamata3.png';
+import kacamata4 from '@/app/aset/asetFashion/kacamata4.png';
+import kacamata5 from '@/app/aset/asetFashion/kacamata5.png';
+
+import sendal1 from '@/app/aset/asetFashion/sendal1.png';
+import sendal2 from '@/app/aset/asetFashion/sendal2.png';
+import sendal3 from '@/app/aset/asetFashion/sendal3.png';
+import sendal4 from '@/app/aset/asetFashion/sendal4.png';
+import sendal5 from '@/app/aset/asetFashion/sendal5.png';
+
+import sepatu1 from '@/app/aset/asetFashion/sepatu1.png';
+import sepatu2 from '@/app/aset/asetFashion/sepatu2.png';
+import sepatu3 from '@/app/aset/asetFashion/sepatu3.png';
+import sepatu4 from '@/app/aset/asetFashion/sepatu4.png';
+import sepatu5 from '@/app/aset/asetFashion/sepatu5.png';
+
+import tas1 from '@/app/aset/asetFashion/tas1.png';
+import tas2 from '@/app/aset/asetFashion/tas2.png';
+import tas3 from '@/app/aset/asetFashion/tas3.png';
+import tas4 from '@/app/aset/asetFashion/tas4.png';
+import tas5 from '@/app/aset/asetFashion/tas5.png';
+
+
 import {
   IoMenu,
   IoSearch,
@@ -12,56 +66,9 @@ import {
   IoHeart,
   IoEye
 } from 'react-icons/io5';
-import gadget from '@/app/aset/gadget.png';   
-import Gadget1 from '@/app/aset/AssetGadget/1.png';
-import Gadget2 from '@/app/aset/AssetGadget/2.png';
-import Gadget3 from '@/app/aset/AssetGadget/3.png';
-import Gadget4 from '@/app/aset/AssetGadget/4.png';
-import Gadget5 from '@/app/aset/AssetGadget/5.png';
-import Gadget6 from '@/app/aset/AssetGadget/6.png';
-import Gadget7 from '@/app/aset/AssetGadget/7.png';
-import Gadget8 from '@/app/aset/AssetGadget/8.png';
-import Gadget9 from '@/app/aset/AssetGadget/9.png';
-import Gadget10 from '@/app/aset/AssetGadget/10.png';
-import Gadget11 from '@/app/aset/AssetGadget/11.png';
-import Gadget12 from '@/app/aset/AssetGadget/12.png';
-import Gadget13 from '@/app/aset/AssetGadget/13.png';
-import Gadget14 from '@/app/aset/AssetGadget/14.png';
-import Gadget15 from '@/app/aset/AssetGadget/15.png';
-import Gadget16 from '@/app/aset/AssetGadget/16.png';
-import Gadget17 from '@/app/aset/AssetGadget/17.png';
-import Gadget18 from '@/app/aset/AssetGadget/18.png';
-import Gadget19 from '@/app/aset/AssetGadget/19.png';
-import Gadget20 from '@/app/aset/AssetGadget/20.png';
-import Gadget21 from '@/app/aset/AssetGadget/21.png';
-import Gadget22 from '@/app/aset/AssetGadget/22.png';
-import Gadget23 from '@/app/aset/AssetGadget/23.png';
-import Gadget24 from '@/app/aset/AssetGadget/24.png';
-import Gadget25 from '@/app/aset/AssetGadget/25.png';
-import Gadget26 from '@/app/aset/AssetGadget/26.png';
-import Gadget27 from '@/app/aset/AssetGadget/27.png';
-import Gadget28 from '@/app/aset/AssetGadget/28.png';
-import Gadget29 from '@/app/aset/AssetGadget/29.png';
-import Gadget30 from '@/app/aset/AssetGadget/30.png';
-import Gadget31 from '@/app/aset/AssetGadget/31.png';
-import Gadget32 from '@/app/aset/AssetGadget/32.png';
-import Gadget33 from '@/app/aset/AssetGadget/33.png';
-import Gadget34 from '@/app/aset/AssetGadget/34.png';
-import Gadget35 from '@/app/aset/AssetGadget/35.png';
-import Gadget36 from '@/app/aset/AssetGadget/36.png';
-import Gadget37 from '@/app/aset/AssetGadget/37.png';
-import Gadget38 from '@/app/aset/AssetGadget/38.png';
-import Gadget39 from '@/app/aset/AssetGadget/39.png';
-import Gadget40 from '@/app/aset/AssetGadget/40.png';
 
-import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
-import samba from '@/app/aset/adidas samba.jpg';  
-import speaker from '@/app/aset/speaker.jpg';   
-import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
-import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
-import ps5 from '@/app/aset/ps5.jpg';
-
-function Gadget() {
+// Define the Fashion component  
+function Fashion() {  
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}    
@@ -125,7 +132,7 @@ function Gadget() {
         {/* Hero Banner */}  
         <div className="rounded-lg overflow-hidden mb-8">  
           <Image   
-            src={gadget}  
+            src={Baju}  
             alt="Nike shoes banner"  
             className="w-full h-[400px] object-cover"  
             width={1200}  
@@ -137,58 +144,56 @@ function Gadget() {
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
-            <h2 className="text-base text-[#C2A58C]">Today's</h2>  
+            <h2 className="text-base text-[#C2A58C]">Kaos</h2>  
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-            
-              {  
-                img: Gadget1,  
-                name: "Instant Mini Camera",  
-                price: 399,  
-                originalPrice: 665,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: Gadget2,  
-                name: "Premium Headphones",  
-                price: 399,  
-                originalPrice: 613,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: Gadget3,  
-                name: "Small Microphone Kit",  
-                price: 399,   
-                originalPrice: 570,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget4,  
-                name: "Smart Watch Pro",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget5,  
-                name: "iPad Air",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
-            
+             {
+              img: kaos1,
+              name: "Urban Wave Tee",
+              price: 12,
+              originalPrice: 19,
+              discount: 10,
+              rating: 4.8,
+              reviews: 88
+              },
+              {
+              img: kaos2,
+              name: "Star Motion Tee",
+              price: 9,
+              originalPrice: 15,
+              discount: 15,
+              rating: 4.2,
+              reviews: 75
+              },
+              {
+              img: kaos3,
+              name: "Neon Graffiti Tee",
+              price: 13,
+              originalPrice: 18,
+              discount: 9,
+              rating: 4.9,
+              reviews: 99
+              },
+              {
+              img: kaos4,
+              name: "Essential Dark Tee",
+              price: 10,
+              originalPrice: 16,
+              discount: 20,
+              rating: 4.5,
+              reviews: 99
+              },
+              {
+              img: kaos5,
+              name: "Basic Sand Tee",
+              price: 15,
+              originalPrice: 22,
+              discount: 15,
+              rating: 4.7,
+              reviews: 99
+              }
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -229,7 +234,7 @@ function Gadget() {
           <div className="flex justify-center mt-8"> 
           </div>  
           
-           {/* Flash Sales */}  
+          {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -238,52 +243,51 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-              {  
-                img: Gadget6,  
-                name: "HV-G92 Microphone",  
-                price: 399,  
-                originalPrice: 665,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: Gadget7,  
-                name: "Garmin inReach Mini",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: Gadget8,  
-                name: "Foldable Keyboard",  
-                price: 399,   
-                originalPrice: 570,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget9,  
-                name: "Apple iMac Desktop",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget10,  
-                name: "Gaming PC Setup",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
+             {
+              img: jaket1,
+              name: "Cozy Winter Hoodie",
+              price: 15,
+              originalPrice: 25,
+              discount: 12,
+              rating: 4.8,
+              reviews: 88
+              },
+              {
+              img: jaket2,
+              name: "Street Style Sweater",
+              price: 18,
+              originalPrice: 35,
+              discount: 15,
+              rating: 4.2,
+              reviews: 75
+              },
+              {
+              img: jaket3,
+              name: "Dark Cloud Jacket",
+              price: 12,
+              originalPrice: 28,
+              discount: 10,
+              rating: 4.9,
+              reviews: 99
+              },
+              {
+              img: jaket4,
+              name: "Worker Basic Jacket",
+              price: 16,
+              originalPrice: 32,
+              rating: 4.5,
+              discount: 14,
+              reviews: 99
+              },
+              {
+              img: jaket5,
+              name: "Checker Pattern Coat",
+              price: 14,
+              originalPrice: 30,
+              discount: 13,
+              rating: 4.7,
+              reviews: 99
               }
-            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -325,8 +329,8 @@ function Gadget() {
           </div>  
         </section>  
 
-         {/* Flash Sales */}  
-         <section className="mb-12">  
+        {/* Flash Sales */}  
+        <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
             <h2 className="text-base text-[#C2A58C]">Today's</h2>  
@@ -334,53 +338,51 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-             
-              {  
-                img: Gadget11,  
-                name: "JBL Black Over-Ear Headphones",  
-                price: 399,  
-                originalPrice: 665,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: Gadget12,  
-                name: "High-Performance Gaming PC",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: Gadget13,  
-                name: "Oculus Quest 2 VR Headset",  
-                price: 399,   
-                originalPrice: 570,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget14,  
-                name: "Red & Black Wireless Headphones",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget15,  
-                name: "Nintendo gen 2 Switch Console",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
-             
+          {
+            img: ohraga1,
+            name: "Nike Pro Elite Jersey",
+            price: 15,
+            originalPrice: 25,
+            discount: 40,
+            rating: 5,
+            reviews: 88
+            },
+            {
+            img: ohraga2,
+            name: "Sport Performance Tee",
+            price: 18,
+            originalPrice: 27,
+            discount: 35,
+            rating: 4,
+            reviews: 75
+            },
+            {
+            img: ohraga3,
+            name: "Urban Camo Training Shirt",
+            price: 13,
+            originalPrice: 19,
+            discount: 30,
+            rating: 5,
+            reviews: 99
+            },
+            {
+            img: ohraga4,
+            name: "Under Armour Training Tee",
+            price: 16,
+            originalPrice: 21,
+            discount: 25,
+            rating: 4.5,
+            reviews: 99
+            },
+            {
+            img: ohraga5,
+            name: "Adidas Basic Sport Tee",
+            price: 14,
+            originalPrice: 19,
+            discount: 25,
+            rating: 4.5,
+            reviews: 99
+            }
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -421,7 +423,7 @@ function Gadget() {
           <div className="flex justify-center mt-8"> 
           </div>  
           </section>
-           {/* Flash Sales */}  
+          {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -430,52 +432,51 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-                {  
-                  img: Gadget16,  
-                  name: "Razer Zephyr Smart Mask",  
-                  price: 399,  
-                  originalPrice: 665,  
-                  discount: 40,  
-                  rating: 5,  
-                  reviews: 88  
-                },  
-                {  
-                  img: Gadget17,  
-                  name: "PlayStation 5 Slim",  
-                  price: 399,  
-                  originalPrice: 1960,  
-                  discount: 35,  
-                  rating: 4,  
-                  reviews: 75  
-                },  
-                {  
-                  img: Gadget18,  
-                  name: "Apple AirPods Pro (2nd Gen)",  
-                  price: 399,   
-                  originalPrice: 570,  
-                  discount: 30,  
-                  rating: 5,  
-                  reviews: 99  
-                },  
-                {  
-                  img: Gadget19,  
-                  name: "Sony WH-1000XM5 Headphones",  
-                  price: 399,  
-                  originalPrice: 532,  
-                  discount: 25,  
-                  rating: 4.5,  
-                  reviews: 99  
-                },  
-                {  
-                  img: Gadget20,  
-                  name: "Sony PSP Handheld Console",  
-                  price: 399,  
-                  originalPrice: 532,  
-                  discount: 25,  
-                  rating: 4.5,  
-                  reviews: 99  
-                }  
-              
+           {  
+            img: tas1,  
+            name: "Black Backpack ",  
+            price: 120,  
+            originalPrice: 200,  
+            discount: 40,  
+            rating: 5,  
+            reviews: 88  
+          },  
+          {  
+            img: tas2,  
+            name: "Ruched Black Handbag",  
+            price: 130,  
+            originalPrice: 200,  
+            discount: 35,  
+            rating: 4,  
+            reviews: 75  
+          },  
+          {  
+            img: tas3,  
+            name: "Pink Ruched Shoulder Bag",  
+            price: 140,   
+            originalPrice: 200,  
+            discount: 30,  
+            rating: 5,  
+            reviews: 99  
+          },  
+          {  
+            img: tas4,  
+            name: "Black Shoulder Bag",  
+            price: 150,  
+            originalPrice: 200,  
+            discount: 25,  
+            rating: 4.5,  
+            reviews: 99  
+          },  
+          {  
+            img: tas5,  
+            name: "Floral Plush Shoulder Bag",  
+            price: 160,  
+            originalPrice: 200,  
+            discount: 25,  
+            rating: 4.5,  
+            reviews: 99  
+          }
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -516,7 +517,7 @@ function Gadget() {
           <div className="flex justify-center mt-8"> 
           </div>  
           
-           {/* Flash Sales */}  
+          {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -525,53 +526,51 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-
               {  
-                img: Gadget21,  
-                name: "ASUS WiFi 6 Gaming Router",  
-                price: 399,  
-                originalPrice: 665,  
+                img: sendal1,  
+                name: "Pink Minimalist Sandals",  
+                price: 90,  
+                originalPrice: 150,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: Gadget22,  
-                name: "Luxury Retro Wireless Mouse",  
-                price: 399,  
-                originalPrice: 1960,  
+                img: sendal2,  
+                name: "Black Flip Flops",  
+                price: 130,  
+                originalPrice: 200,  
                 discount: 35,  
                 rating: 4,  
                 reviews: 75  
               },  
               {  
-                img: Gadget23,  
-                name: "Acer Aspire 5 Laptop",  
-                price: 399,   
-                originalPrice: 570,  
+                img: sendal3,  
+                name: "Beige Bow Sandals",  
+                price: 140,   
+                originalPrice: 200,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: Gadget24,  
-                name: "GoPro HERO11 with Tripod",  
-                price: 399,  
-                originalPrice: 532,  
+                img: sendal4,  
+                name: "Black Triple Strap Sandals",  
+                price: 150,  
+                originalPrice: 200,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: Gadget25,  
-                name: "Acoustic Energy Bookshelf Speakers",  
-                price: 399,  
-                originalPrice: 532,  
+                img: sendal5,  
+                name: "Brown Bow Sandals",  
+                price: 160,  
+                originalPrice: 200,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              }  
-            
+              } 
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -613,8 +612,8 @@ function Gadget() {
           </div>  
         </section>  
 
-         {/* Flash Sales */}  
-         <section className="mb-12">  
+        {/* Flash Sales */}  
+        <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
             <h2 className="text-base text-[#C2A58C]">Today's</h2>  
@@ -622,53 +621,51 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-            
-                {  
-                  img: Gadget26,  
-                  name: "Oculus Quest 2 VR Headset",  
-                  price: 399,  
-                  originalPrice: 665,  
-                  discount: 40,  
-                  rating: 5,  
-                  reviews: 88  
-                },  
-                {  
-                  img: Gadget27,  
-                  name: "Professional Streaming Setup (Microphone & Headphones)",  
-                  price: 399,  
-                  originalPrice: 1960,  
-                  discount: 35,  
-                  rating: 4,  
-                  reviews: 75  
-                },  
-                {  
-                  img: Gadget28,  
-                  name: "Sony FX3 Full-Frame Cinema Camera",  
-                  price: 399,   
-                  originalPrice: 570,  
-                  discount: 30,  
-                  rating: 5,  
-                  reviews: 99  
-                },  
-                {  
-                  img: Gadget29,  
-                  name: "Amazon Echo Dot (4th Gen) Smart Speaker",  
-                  price: 399,  
-                  originalPrice: 532,  
-                  discount: 25,  
-                  rating: 4.5,  
-                  reviews: 99  
-                },  
-                {  
-                  img: Gadget30,  
-                  name: "GoPro HERO7 Action Camera with Grip",  
-                  price: 399,  
-                  originalPrice: 532,  
-                  discount: 25,  
-                  rating: 4.5,  
-                  reviews: 99  
-                }  
-              
+              {  
+                img: kacamata1,  
+                name: "Gold Frame Glasses",  
+                price: 120,  
+                originalPrice: 200,  
+                discount: 40,  
+                rating: 5,  
+                reviews: 88  
+              },  
+              {  
+                img: kacamata2,  
+                name: "Black Square Glasses",  
+                price: 130,  
+                originalPrice: 200,  
+                discount: 35,  
+                rating: 4,  
+                reviews: 75  
+              },  
+              {  
+                img: kacamata3,  
+                name: "Black Polarized Sunglasses",  
+                price: 140,   
+                originalPrice: 200,  
+                discount: 30,  
+                rating: 5,  
+                reviews: 99  
+              },  
+              {  
+                img: kacamata4,  
+                name: "Classic Black Sunglasses",  
+                price: 150,  
+                originalPrice: 200,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              },  
+              {  
+                img: kacamata5,  
+                name: "Aviator Black Sunglasses",  
+                price: 160,  
+                originalPrice: 200,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              }            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -716,53 +713,53 @@ function Gadget() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[  
-             
-              {  
-                img: Gadget31,  
-                name: "Spy Camera USB Charger",  
-                price: 399,  
-                originalPrice: 665,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: Gadget32,  
-                name: "Anker Travel Power Bank Set",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: Gadget33,  
-                name: "Marshall Major IV Wireless Headphones",  
-                price: 399,   
-                originalPrice: 570,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget34,  
-                name: "Mini Digital Night Vision Camera",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget35,  
-                name: "Philips 3200 Series Fully Automatic Espresso Machine",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+            {
+            [
+              {
+                img: celana1,
+                name: "Star-Pattern Jeans",
+                price: 60,
+                originalPrice: 100,
+                discount: 40,
+                rating: 4.5,
+                reviews: 88,
+              },
+              {
+                img: celana2,
+                name: "Spider-Web Pants",
+                price: 65,
+                originalPrice: 100,
+                discount: 35,
+                rating: 4,
+                reviews: 75,
+              },
+              {
+                img: celana3,
+                name: "Classic Black Jeans",
+                price: 70,
+                originalPrice: 100,
+                discount: 30,
+                rating: 5,
+                reviews: 99,
+              },
+              {
+                img: celana4,
+                name: "Comfort Fit Trousers",
+                price: 75,
+                originalPrice: 100,
+                discount: 25,
+                rating: 4.5,
+                reviews: 99,
+              },
+              {
+                img: celana5,
+                name: "Straight-Cut Jeans",
+                price: 75,
+                originalPrice: 100,
+                discount: 25,
+                rating: 4.5,
+                reviews: 99,
+              },
             
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
@@ -804,7 +801,7 @@ function Gadget() {
           <div className="flex justify-center mt-8"> 
           </div>  
           
-           {/* Flash Sales */}  
+          {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -812,55 +809,54 @@ function Gadget() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[  
-            
-              {  
-                img: Gadget37,  
-                name: "Panasonic High-Power Blender",  
-                price: 399,  
-                originalPrice: 665,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: Gadget38,  
-                name: "COSORI Digital Air Fryer",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: Gadget39,  
-                name: "Tineco Smart Cordless Vacuum Cleaner",  
-                price: 399,   
-                originalPrice: 570,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget40,  
-                name: "ZEISS ZX1 Full-Frame Digital Camera",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: Gadget36,  
-                name: "Sony ZV-1 Vlogging Camera with Tripod",  
-                price: 399,  
-                originalPrice: 532,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
-          
-            ].map((item, index) => (  
+            {[
+  {
+    img: sepatu1,
+    name: "Platform Converse",
+    price: 60,
+    originalPrice: 100,
+    discount: 40,
+    rating: 5,
+    reviews: 88,
+  },
+  {
+    img: sepatu2,
+    name: "Classic Converse High  ",
+    price: 65,
+    originalPrice: 100,
+    discount: 35,
+    rating: 4,
+    reviews: 75,
+  },
+  {
+    img: sepatu3,
+    name: "Nike Air Force 1",
+    price: 70,
+    originalPrice: 100,
+    discount: 30,
+    rating: 5,
+    reviews: 99,
+  },
+  {
+    img: sepatu4,
+    name: "Adidas Ozweego",
+    price: 75,
+    originalPrice: 100,
+    discount: 25,
+    rating: 4.5,
+    reviews: 99,
+  },
+  {
+    img: sepatu5,
+    name: "Nike Air Shadow",
+    price: 75,
+    originalPrice: 100,
+    discount: 25,
+    rating: 4.5,
+    reviews: 99,
+  },
+]
+.map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
                   <Image   
@@ -968,5 +964,5 @@ function Gadget() {
   </div>
   );
 }
-
-export default Gadget;
+  
+export default Fashion;  

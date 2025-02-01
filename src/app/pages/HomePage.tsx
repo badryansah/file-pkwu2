@@ -1,5 +1,5 @@
 import React from 'react';  
-import Navbar from './Navbar'; // Import the Navbar component  
+import Navbar from "@/app/components/Navbar";  
 import Image from 'next/image'; // Import the Next.js Image component  
 import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  

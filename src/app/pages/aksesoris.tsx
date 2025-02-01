@@ -1,59 +1,68 @@
 import React from 'react';  
-import Navbar from './Navbar'; // Import the Navbar component  
+import Navbar from '@/app/components/Navbar';  
 import Image from 'next/image'; // Import the Next.js Image component  
 import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  
-import Baju from '@/app/aset/Fashion.png';
-import jaket1 from '@/app/aset/asetFashion/jaket1.png';
-import jaket2 from '@/app/aset/asetFashion/jaket2.png';
-import jaket3 from '@/app/aset/asetFashion/jaket3.png';
-import jaket4 from '@/app/aset/asetFashion/jaket4.png';
-import jaket5 from '@/app/aset/asetFashion/jaket5.png';
 
-import kaos1 from '@/app/aset/asetFashion/kaos1.png';
-import kaos2 from '@/app/aset/asetFashion/kaos2.png';
-import kaos3 from '@/app/aset/asetFashion/kaos3.png';
-import kaos4 from '@/app/aset/asetFashion/kaos4.png';
-import kaos5 from '@/app/aset/asetFashion/kaos5.png';
-import kaos6 from '@/app/aset/asetFashion/kaos6.png';
+import aks from '@/app/aset/Aksesoris.png'; 
 
-import ohraga1 from '@/app/aset/asetFashion/olhraga1.png';
-import ohraga2 from '@/app/aset/asetFashion/olhraga2.png';
-import ohraga3 from '@/app/aset/asetFashion/olhraga3.png';
-import ohraga4 from '@/app/aset/asetFashion/olhraga4.png';
-import ohraga5 from '@/app/aset/asetFashion/olhraga5.png';
+import Aks1 from '@/app/aset/AssetAksesoris/1.png';
+import Aks2 from '@/app/aset/AssetAksesoris/2.png';
+import Aks3 from '@/app/aset/AssetAksesoris/3.png';
+import Aks4 from '@/app/aset/AssetAksesoris/4.png';
+import Aks5 from '@/app/aset/AssetAksesoris/5.png';
+import Aks6 from '@/app/aset/AssetAksesoris/6.png';
+import Aks7 from '@/app/aset/AssetAksesoris/7.png';
+import Aks8 from '@/app/aset/AssetAksesoris/8.png';
+import Aks9 from '@/app/aset/AssetAksesoris/9.png';
+import Aks10 from '@/app/aset/AssetAksesoris/10.png';
+import Aks11 from '@/app/aset/AssetAksesoris/11.png';
+import Aks12 from '@/app/aset/AssetAksesoris/12.png';
+import Aks13 from '@/app/aset/AssetAksesoris/13.png';
+import Aks14 from '@/app/aset/AssetAksesoris/14.png';
+import Aks15 from '@/app/aset/AssetAksesoris/15.png';
+import Aks16 from '@/app/aset/AssetAksesoris/16.png';
+import Aks17 from '@/app/aset/AssetAksesoris/17.png';
+import Aks18 from '@/app/aset/AssetAksesoris/18.png';
+import Aks19 from '@/app/aset/AssetAksesoris/19.png';
+import Aks20 from '@/app/aset/AssetAksesoris/20.png';
+import Aks21 from '@/app/aset/AssetAksesoris/21.png';
+import Aks22 from '@/app/aset/AssetAksesoris/22.png';
+import Aks23 from '@/app/aset/AssetAksesoris/23.png';
+import Aks24 from '@/app/aset/AssetAksesoris/24.png';
+import Aks25 from '@/app/aset/AssetAksesoris/25.png';
+import Aks26 from '@/app/aset/AssetAksesoris/26.png';
+import Aks27 from '@/app/aset/AssetAksesoris/27.png';
+import Aks28 from '@/app/aset/AssetAksesoris/28.png';
+import Aks29 from '@/app/aset/AssetAksesoris/29.png';
+import Aks30 from '@/app/aset/AssetAksesoris/30.png';
+import Aks31 from '@/app/aset/AssetAksesoris/31.png';
+import Aks32 from '@/app/aset/AssetAksesoris/32.png';
+import Aks33 from '@/app/aset/AssetAksesoris/33.png';
+import Aks34 from '@/app/aset/AssetAksesoris/34.png';
+import Aks35 from '@/app/aset/AssetAksesoris/35.png';
+import Aks36 from '@/app/aset/AssetAksesoris/36.png';
+import Aks37 from '@/app/aset/AssetAksesoris/37.png';
+import Aks38 from '@/app/aset/AssetAksesoris/38.png';
+import Aks39 from '@/app/aset/AssetAksesoris/39.png';
+import Aks40 from '@/app/aset/AssetAksesoris/40.png';
 
-import celana1 from '@/app/aset/asetFashion/celana1.png';
-import celana2 from '@/app/aset/asetFashion/celana2.png';
-import celana3 from '@/app/aset/asetFashion/celana3.png';
-import celana4 from '@/app/aset/asetFashion/celana4.png';
-import celana5 from '@/app/aset/asetFashion/celana5.png';
-
-import kacamata1 from '@/app/aset/asetFashion/kacamata1.png';
-import kacamata2 from '@/app/aset/asetFashion/kacamata2.png';
-import kacamata3 from '@/app/aset/asetFashion/kacamata3.png';
-import kacamata4 from '@/app/aset/asetFashion/kacamata4.png';
-import kacamata5 from '@/app/aset/asetFashion/kacamata5.png';
-
-import sendal1 from '@/app/aset/asetFashion/sendal1.png';
-import sendal2 from '@/app/aset/asetFashion/sendal2.png';
-import sendal3 from '@/app/aset/asetFashion/sendal3.png';
-import sendal4 from '@/app/aset/asetFashion/sendal4.png';
-import sendal5 from '@/app/aset/asetFashion/sendal5.png';
-
-import sepatu1 from '@/app/aset/asetFashion/sepatu1.png';
-import sepatu2 from '@/app/aset/asetFashion/sepatu2.png';
-import sepatu3 from '@/app/aset/asetFashion/sepatu3.png';
-import sepatu4 from '@/app/aset/asetFashion/sepatu4.png';
-import sepatu5 from '@/app/aset/asetFashion/sepatu5.png';
-
-import tas1 from '@/app/aset/asetFashion/tas1.png';
-import tas2 from '@/app/aset/asetFashion/tas2.png';
-import tas3 from '@/app/aset/asetFashion/tas3.png';
-import tas4 from '@/app/aset/asetFashion/tas4.png';
-import tas5 from '@/app/aset/asetFashion/tas5.png';
-
-
+import baju from '@/app/aset/Abercrombie’s $50 Knit Polos Have No Business Being This Good.jpg';  
+import jam from '@/app/aset/Christophe Arden CAF3001 MDBIPBA Jam Tangan Pria.jpg';  
+import tas from '@/app/aset/Clutch Handbag Pria - Tas tangan Clutch Pria _ Pouch dompet Pria ToWn.jpg'  
+import ipat from '@/app/aset/Ikat Pinggang Wanita Sabuk Square Kulit PU Leather Belt Fashion Korea.jpg';   
+import wobeg from '@/app/aset/MEDIUM AVA TRIOMPHE.jpg';  
+import celana from '@/app/aset/Carhartt WIP Landon Pant.jpg';  
+import dipeg from '@/app/aset/Prada Small Logo-plaque.jpg';  
+import shirt from '@/app/aset/Seek Graphic Tee - Litlookz Studio.jpg';  
+import hoodie from '@/app/aset/Oversized Hoodie Washed Grey.jpg';  
+import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
+import samba from '@/app/aset/adidas samba.jpg';  
+import Nike from '@/app/aset/nike.jpg';   
+import speaker from '@/app/aset/speaker.jpg';   
+import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
+import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
+import ps5 from '@/app/aset/ps5.jpg';
 import {
   IoMenu,
   IoSearch,
@@ -132,7 +141,7 @@ function Fashion() {
         {/* Hero Banner */}  
         <div className="rounded-lg overflow-hidden mb-8">  
           <Image   
-            src={Baju}  
+            src={aks}  
             alt="Nike shoes banner"  
             className="w-full h-[400px] object-cover"  
             width={1200}  
@@ -144,56 +153,57 @@ function Fashion() {
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
-            <h2 className="text-base text-[#C2A58C]">Kaos</h2>  
+            <h2 className="text-base text-[#C2A58C]">Today's</h2>  
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[  
-             {
-              img: kaos1,
-              name: "Urban Wave Tee",
-              price: 12,
-              originalPrice: 19,
-              discount: 10,
-              rating: 4.8,
-              reviews: 88
-              },
-              {
-              img: kaos2,
-              name: "Star Motion Tee",
-              price: 9,
-              originalPrice: 15,
-              discount: 15,
-              rating: 4.2,
-              reviews: 75
-              },
-              {
-              img: kaos3,
-              name: "Neon Graffiti Tee",
-              price: 13,
-              originalPrice: 18,
-              discount: 9,
-              rating: 4.9,
-              reviews: 99
-              },
-              {
-              img: kaos4,
-              name: "Essential Dark Tee",
-              price: 10,
-              originalPrice: 16,
-              discount: 20,
-              rating: 4.5,
-              reviews: 99
-              },
-              {
-              img: kaos5,
-              name: "Basic Sand Tee",
-              price: 15,
-              originalPrice: 22,
-              discount: 15,
-              rating: 4.7,
-              reviews: 99
-              }
+            {[ 
+                {  
+                  img: Aks1,  
+                  name: "Minimalist Silver Frame Glasses",  
+                  price: 399,  
+                  originalPrice: 665,  
+                  discount: 40,  
+                  rating: 5,  
+                  reviews: 88  
+                },  
+                {  
+                  img: Aks2,  
+                  name: "Black Velvet Choker Necklace",  
+                  price: 399,  
+                  originalPrice: 1960,  
+                  discount: 35,  
+                  rating: 4,  
+                  reviews: 75  
+                },  
+                {  
+                  img: Aks3,  
+                  name: "Luxury Rose Gold Makeup Brush",  
+                  price: 399,   
+                  originalPrice: 570,  
+                  discount: 30,  
+                  rating: 5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Aks4,  
+                  name: "Elegant Silver Star Bracelet Set",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Aks5,  
+                  name: "Luxury Silver Heart Ring",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                }  
+              
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -234,7 +244,7 @@ function Fashion() {
           <div className="flex justify-center mt-8"> 
           </div>  
           
-          {/* Flash Sales */}  
+           {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -243,51 +253,51 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-             {
-              img: jaket1,
-              name: "Cozy Winter Hoodie",
-              price: 15,
-              originalPrice: 25,
-              discount: 12,
-              rating: 4.8,
-              reviews: 88
-              },
-              {
-              img: jaket2,
-              name: "Street Style Sweater",
-              price: 18,
-              originalPrice: 35,
-              discount: 15,
-              rating: 4.2,
-              reviews: 75
-              },
-              {
-              img: jaket3,
-              name: "Dark Cloud Jacket",
-              price: 12,
-              originalPrice: 28,
-              discount: 10,
-              rating: 4.9,
-              reviews: 99
-              },
-              {
-              img: jaket4,
-              name: "Worker Basic Jacket",
-              price: 16,
-              originalPrice: 32,
-              rating: 4.5,
-              discount: 14,
-              reviews: 99
-              },
-              {
-              img: jaket5,
-              name: "Checker Pattern Coat",
-              price: 14,
-              originalPrice: 30,
-              discount: 13,
-              rating: 4.7,
-              reviews: 99
-              }
+              {  
+                img: Aks6,  
+                name: "Silver Heart Pink Gemstone Ring",  
+                price: 399,  
+                originalPrice: 665,  
+                discount: 40,  
+                rating: 5,  
+                reviews: 88  
+              },  
+              {  
+                img: Aks7,  
+                name: "Luxury Rose Gold Pen with Crown Top",  
+                price: 399,  
+                originalPrice: 1960,  
+                discount: 35,  
+                rating: 4,  
+                reviews: 75  
+              },  
+              {  
+                img: Aks8,  
+                name: "Light Blue Vintage Baseball Cap",  
+                price: 399,   
+                originalPrice: 570,  
+                discount: 30,  
+                rating: 5,  
+                reviews: 99  
+              },  
+              {  
+                img: Aks9,  
+                name: "Gothic Black Bat Ring",  
+                price: 399,  
+                originalPrice: 532,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              },  
+              {  
+                img: Aks10,  
+                name: "Cartier Love Gold Bracelet",  
+                price: 399,  
+                originalPrice: 532,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              } 
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -329,8 +339,8 @@ function Fashion() {
           </div>  
         </section>  
 
-        {/* Flash Sales */}  
-        <section className="mb-12">  
+         {/* Flash Sales */}  
+         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
             <h2 className="text-base text-[#C2A58C]">Today's</h2>  
@@ -338,51 +348,53 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-          {
-            img: ohraga1,
-            name: "Nike Pro Elite Jersey",
-            price: 15,
-            originalPrice: 25,
-            discount: 40,
-            rating: 5,
-            reviews: 88
-            },
-            {
-            img: ohraga2,
-            name: "Sport Performance Tee",
-            price: 18,
-            originalPrice: 27,
-            discount: 35,
-            rating: 4,
-            reviews: 75
-            },
-            {
-            img: ohraga3,
-            name: "Urban Camo Training Shirt",
-            price: 13,
-            originalPrice: 19,
-            discount: 30,
-            rating: 5,
-            reviews: 99
-            },
-            {
-            img: ohraga4,
-            name: "Under Armour Training Tee",
-            price: 16,
-            originalPrice: 21,
-            discount: 25,
-            rating: 4.5,
-            reviews: 99
-            },
-            {
-            img: ohraga5,
-            name: "Adidas Basic Sport Tee",
-            price: 14,
-            originalPrice: 19,
-            discount: 25,
-            rating: 4.5,
-            reviews: 99
-            }
+          
+            {  
+              img: Aks11,  
+              name: "Elegant Silver Charm Bracelet",  
+              price: 399,  
+              originalPrice: 665,  
+              discount: 40,  
+              rating: 5,  
+              reviews: 88  
+            },  
+            {  
+              img: Aks12,  
+              name: "Chunky Chain Ring",  
+              price: 399,  
+              originalPrice: 1960,  
+              discount: 35,  
+              rating: 4,  
+              reviews: 75  
+            },  
+            {  
+              img: Aks13,  
+              name: "Adjustable Minimalist Open Ring",  
+              price: 399,   
+              originalPrice: 570,  
+              discount: 30,  
+              rating: 5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks14,  
+              name: "Beaded Butterfly Bracelet",  
+              price: 399,  
+              originalPrice: 532,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks15,  
+              name: "Silver Butterfly Stud Earrings",  
+              price: 399,  
+              originalPrice: 532,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            }  
+          
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -423,7 +435,7 @@ function Fashion() {
           <div className="flex justify-center mt-8"> 
           </div>  
           </section>
-          {/* Flash Sales */}  
+           {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -432,51 +444,54 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-           {  
-            img: tas1,  
-            name: "Black Backpack ",  
-            price: 120,  
-            originalPrice: 200,  
-            discount: 40,  
-            rating: 5,  
-            reviews: 88  
-          },  
-          {  
-            img: tas2,  
-            name: "Ruched Black Handbag",  
-            price: 130,  
-            originalPrice: 200,  
-            discount: 35,  
-            rating: 4,  
-            reviews: 75  
-          },  
-          {  
-            img: tas3,  
-            name: "Pink Ruched Shoulder Bag",  
-            price: 140,   
-            originalPrice: 200,  
-            discount: 30,  
-            rating: 5,  
-            reviews: 99  
-          },  
-          {  
-            img: tas4,  
-            name: "Black Shoulder Bag",  
-            price: 150,  
-            originalPrice: 200,  
-            discount: 25,  
-            rating: 4.5,  
-            reviews: 99  
-          },  
-          {  
-            img: tas5,  
-            name: "Floral Plush Shoulder Bag",  
-            price: 160,  
-            originalPrice: 200,  
-            discount: 25,  
-            rating: 4.5,  
-            reviews: 99  
-          }
+             
+              {  
+                img: Aks16,  
+                name: "Minimalist Silver Bead Bracelet",  
+                price: 399,  
+                originalPrice: 665,  
+                discount: 40,  
+                rating: 5,  
+                reviews: 88  
+              },  
+              {  
+                img: Aks17,  
+                name: "Elegant Black Clover Ring",  
+                price: 399,  
+                originalPrice: 1960,  
+                discount: 35,  
+                rating: 4,  
+                reviews: 75  
+              },  
+              {  
+                img: Aks18,  
+                name: "Gold Eiffel Tower Pendant Necklace",  
+                price: 399,   
+                originalPrice: 570,  
+                discount: 30,  
+                rating: 5,  
+                reviews: 99  
+              },  
+              {  
+                img: Aks19,  
+                name: "Silver Heart Ruby Gemstone Ring",  
+                price: 399,  
+                originalPrice: 532,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              },  
+              {  
+                img: Aks20,  
+                name: "Delicate Silver Leaf Bracelet",  
+                price: 399,  
+                originalPrice: 532,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              }  
+            
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -517,7 +532,7 @@ function Fashion() {
           <div className="flex justify-center mt-8"> 
           </div>  
           
-          {/* Flash Sales */}  
+           {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -526,51 +541,53 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+
               {  
-                img: sendal1,  
-                name: "Pink Minimalist Sandals",  
-                price: 90,  
-                originalPrice: 150,  
+                img: Aks21,  
+                name: "Rockstar Guitar Keychain Set",  
+                price: 399,  
+                originalPrice: 320,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: sendal2,  
-                name: "Black Flip Flops",  
-                price: 130,  
-                originalPrice: 200,  
+                img: Aks22,  
+                name: "Celestial Star Charm Keychain",  
+                price: 399,  
+                originalPrice: 1960,  
                 discount: 35,  
                 rating: 4,  
                 reviews: 75  
               },  
               {  
-                img: sendal3,  
-                name: "Beige Bow Sandals",  
-                price: 140,   
-                originalPrice: 200,  
+                img: Aks23,  
+                name: "Elegant Blue Sapphire Ring",  
+                price: 399,   
+                originalPrice: 370,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: sendal4,  
-                name: "Black Triple Strap Sandals",  
-                price: 150,  
-                originalPrice: 200,  
+                img: Aks24,  
+                name: "Gold Heart Pearl Earrings",  
+                price: 399,  
+                originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: sendal5,  
-                name: "Brown Bow Sandals",  
-                price: 160,  
-                originalPrice: 200,  
+                img: Aks25,  
+                name: "Minimalist Black Rose Temporary Tattoo",  
+                price: 399,  
+                originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              } 
+              }  
+
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -612,8 +629,8 @@ function Fashion() {
           </div>  
         </section>  
 
-        {/* Flash Sales */}  
-        <section className="mb-12">  
+         {/* Flash Sales */}  
+         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
             <h2 className="text-base text-[#C2A58C]">Today's</h2>  
@@ -621,51 +638,53 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+            
               {  
-                img: kacamata1,  
-                name: "Gold Frame Glasses",  
-                price: 120,  
-                originalPrice: 200,  
+                img: Aks26,  
+                name: "Elegant Amethyst Heart Ring",  
+                price: 399,  
+                originalPrice: 320,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: kacamata2,  
-                name: "Black Square Glasses",  
-                price: 130,  
-                originalPrice: 200,  
+                img: Aks27,  
+                name: "Retro Vinyl Record Keychain Set",  
+                price: 399,  
+                originalPrice: 1960,  
                 discount: 35,  
                 rating: 4,  
                 reviews: 75  
               },  
               {  
-                img: kacamata3,  
-                name: "Black Polarized Sunglasses",  
-                price: 140,   
-                originalPrice: 200,  
+                img: Aks28,  
+                name: "Blue Sapphire Heart Ring",  
+                price: 399,   
+                originalPrice: 370,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: kacamata4,  
-                name: "Classic Black Sunglasses",  
-                price: 150,  
-                originalPrice: 200,  
+                img: Aks29,  
+                name: "Bohemian Handmade Beaded Bracelet",  
+                price: 399,  
+                originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: kacamata5,  
-                name: "Aviator Black Sunglasses",  
-                price: 160,  
-                originalPrice: 200,  
+                img: Aks30,  
+                name: "Minimalist Pink Wristwatch",  
+                price: 399,  
+                originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              }            
+              }  
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -713,53 +732,54 @@ function Fashion() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {
-            [
-              {
-                img: celana1,
-                name: "Star-Pattern Jeans",
-                price: 60,
-                originalPrice: 100,
-                discount: 40,
-                rating: 4.5,
-                reviews: 88,
-              },
-              {
-                img: celana2,
-                name: "Spider-Web Pants",
-                price: 65,
-                originalPrice: 100,
-                discount: 35,
-                rating: 4,
-                reviews: 75,
-              },
-              {
-                img: celana3,
-                name: "Classic Black Jeans",
-                price: 70,
-                originalPrice: 100,
-                discount: 30,
-                rating: 5,
-                reviews: 99,
-              },
-              {
-                img: celana4,
-                name: "Comfort Fit Trousers",
-                price: 75,
-                originalPrice: 100,
-                discount: 25,
-                rating: 4.5,
-                reviews: 99,
-              },
-              {
-                img: celana5,
-                name: "Straight-Cut Jeans",
-                price: 75,
-                originalPrice: 100,
-                discount: 25,
-                rating: 4.5,
-                reviews: 99,
-              },
+            {[  
+             
+              {  
+                img: Aks31,  
+                name: "Minimalist Star Ring",  
+                price: 399,  
+                originalPrice: 320,  
+                discount: 40,  
+                rating: 5,  
+                reviews: 88  
+              },  
+              {  
+                img: Aks32,  
+                name: "Golden Music Charm Keychain",  
+                price: 399,  
+                originalPrice: 1960,  
+                discount: 35,  
+                rating: 4,  
+                reviews: 75  
+              },  
+              {  
+                img: Aks33,  
+                name: "Classic Trucker Cap - Black & Red",  
+                price: 399,   
+                originalPrice: 370,  
+                discount: 30,  
+                rating: 5,  
+                reviews: 99  
+              },  
+              {  
+                img: Aks34,  
+                name: "Elegant Rose Gold Wristwatch",  
+                price: 399,  
+                originalPrice: 375,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              },  
+              {  
+                img: Aks35,  
+                name: "Silver Hoop Bracelet Set",  
+                price: 399,  
+                originalPrice: 375,  
+                discount: 25,  
+                rating: 4.5,  
+                reviews: 99  
+              }  
+            
             
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
@@ -801,7 +821,7 @@ function Fashion() {
           <div className="flex justify-center mt-8"> 
           </div>  
           
-          {/* Flash Sales */}  
+           {/* Flash Sales */}  
         <section className="mb-12">  
           <div className="flex items-center gap-2 mb-6">  
             <div className="w-1 h-6 bg-[#C2A58C]"></div>  
@@ -809,54 +829,55 @@ function Fashion() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[
-  {
-    img: sepatu1,
-    name: "Platform Converse",
-    price: 60,
-    originalPrice: 100,
-    discount: 40,
-    rating: 5,
-    reviews: 88,
-  },
-  {
-    img: sepatu2,
-    name: "Classic Converse High  ",
-    price: 65,
-    originalPrice: 100,
-    discount: 35,
-    rating: 4,
-    reviews: 75,
-  },
-  {
-    img: sepatu3,
-    name: "Nike Air Force 1",
-    price: 70,
-    originalPrice: 100,
-    discount: 30,
-    rating: 5,
-    reviews: 99,
-  },
-  {
-    img: sepatu4,
-    name: "Adidas Ozweego",
-    price: 75,
-    originalPrice: 100,
-    discount: 25,
-    rating: 4.5,
-    reviews: 99,
-  },
-  {
-    img: sepatu5,
-    name: "Nike Air Shadow",
-    price: 75,
-    originalPrice: 100,
-    discount: 25,
-    rating: 4.5,
-    reviews: 99,
-  },
-]
-.map((item, index) => (  
+            {[  
+           
+            {  
+              img: Aks36,  
+              name: "Black Heart Hair Clip",  
+              price: 399,  
+              originalPrice: 320,  
+              discount: 40,  
+              rating: 5,  
+              reviews: 88  
+            },  
+            {  
+              img: Aks37,  
+              name: "Mini Guitar Keychain",  
+              price: 399,  
+              originalPrice: 1960,  
+              discount: 35,  
+              rating: 4,  
+              reviews: 75  
+            },  
+            {  
+              img: Aks38,  
+              name: "Gozeal Portable Storage Pouch",  
+              price: 399,   
+              originalPrice: 370,  
+              discount: 30,  
+              rating: 5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks39,  
+              name: "Cute Bunny Ears Headband",  
+              price: 399,  
+              originalPrice: 375,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks40,  
+              name: "Funny Pizza Cowboy Hat",  
+              price: 399,  
+              originalPrice: 375,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            }  
+          
+            ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
                   <Image   
