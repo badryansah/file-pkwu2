@@ -61,7 +61,7 @@ function login() {
                     required
                   />
                 </div>
-                <Link href="/dashboard">
+                <Link href="/Home">
                   <button
                     type="submit"
                     className="w-full bg-gray-200 hover:bg-gray-300 text-black py-2 rounded-lg"

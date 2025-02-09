@@ -1,9 +1,10 @@
 import React from "react";
 import { FaArrowLeft, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { IoHeart, IoSearch, IoPersonOutline, IoCartOutline } from "react-icons/io5";
+import { IoHeart, IoSearch, IoPersonOutline, IoCartOutline, IoHeartOutline,IoHomeOutline } from "react-icons/io5";
 import Image from "next/image";
 import sps5 from '@/app/aset/PlayStation 5  Wireless Controller.jpg'
 import LCDMonitor from '@/app/aset/monitor.png';
+import Link from "next/link";
 const Keranjang = () => {
   return (
     <div className="min-h-screen bg-white text-black flex flex-col">
@@ -15,7 +16,12 @@ const Keranjang = () => {
           <input type="text" placeholder="Search..." className="w-full outline-none" />
         </div>
         <div className="flex items-center space-x-4">
-          <IoHeart className="text-2xl cursor-pointer" />
+        <Link href="/Home">
+          <button>
+           <IoHomeOutline className="text-gray-600 text-xl" />
+           </button>
+          </Link>
+          <IoHeartOutline className="text-2xl cursor-pointer" />
           < IoCartOutline className="text-2xl cursor-pointer" />
           <IoPersonOutline className="text-2xl cursor-pointer" />
         </div>
@@ -72,9 +78,11 @@ const Keranjang = () => {
 
       {/* Actions */}
       <div className="flex justify-between mt-6 p-4">
+      <Link href="/Home">
         <button className="flex items-center bg-gray-300 px-4 py-2 rounded-md text-gray-700 hover:bg-gray-400">
           <FaArrowLeft className="mr-2" /> Kembali
         </button>
+        </Link>
 
         <div className="flex items-center">
           <input
@@ -101,9 +109,11 @@ const Keranjang = () => {
           <span>Total:</span>
           <span>$1750</span>
         </div>
+        <Link href="/Checkout">
         <button className="bg-[#C49B78] text-white w-full py-2 mt-4 rounded-md flex items-center justify-center">
            Checkout
         </button>
+        </Link>
       </div>
 
       {/* New Footer */}

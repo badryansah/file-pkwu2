@@ -66,6 +66,7 @@ import {
   IoHeart,
   IoEye
 } from 'react-icons/io5';
+import Link from 'next/link';
 
 // Define the Fashion component  
 function Fashion() {  

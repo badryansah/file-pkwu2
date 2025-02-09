@@ -2,10 +2,13 @@ import React from 'react'
 import RandomGoofyAhhShit from '@/app/aset/shopping_cart_and_phone.jpg'
 import GlugluLogo from '@/app/aset/google-removebg-preview.png'
 import Image from 'next/image'
-function sign() {
+import Link from 'next/link'
+
+function Sign() {
+
   return (
     <>
-     <div className="min-h-screen bg-gray-100 flex flex-col">
+     <div className="min-h-screen bg-white flex flex-col">
       {/* Header */}
       <header className="bg-white shadow-sm p-6">
         <div className="max-w-7xl mx-auto">
@@ -15,14 +18,17 @@ function sign() {
 
       {/* Main Content */}
       <main className="flex-grow flex items-center justify-center">
-        <div className="bg-white rounded-lg shadow-lg max-w-4xl w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="bg-white max-w-4xl w-full p-8 grid grid-cols-1 md:grid-cols-2 gap-2">
           {/* Left Section */}
           <div className="flex justify-center items-center">
-            <Image
-              src={RandomGoofyAhhShit} // Ganti dengan path gambar Anda
-              alt="Shopping Cart and Phone"
-              className="w-3/4 h-auto"
-            />
+          <Image
+            src={RandomGoofyAhhShit}
+            alt="Shopping Cart and Phone"
+            width={300} // Atur sesuai kebutuhan
+            height={300} 
+            className="w-3/4 h-auto"
+          />
+
           </div>
 
           {/* Right Section */}
@@ -75,12 +81,14 @@ function sign() {
                   required
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full bg-brown-500 hover:bg-brown-600 text-black py-2 rounded-lg mb-4"
-              >
-                Create Account
-              </button>
+              <Link href="/login">
+                <button
+                  type="button"
+                  className="w-full bg-brown-500 hover:bg-brown-600 text-black py-2 rounded-lg mb-4"
+                >
+                  Create Account
+                </button>
+              </Link>
               <button
                 type="button"
                 className="w-full bg-gray-100 border border-gray-300 text-gray-700 py-2 rounded-lg flex justify-center items-center gap-2"
@@ -95,7 +103,7 @@ function sign() {
             </form>
             <p className="text-center mt-4">
               Already have an account?{" "}
-              <a href="/auth/login" className="text-blue-500">
+              <a href="/login" className="text-blue-500">
                 Log In
               </a>
             </p>
@@ -143,4 +151,4 @@ function sign() {
   )
 }
 
-export default sign
+export default Sign

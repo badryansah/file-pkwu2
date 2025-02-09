@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { IoCartOutline, IoPersonOutline, IoHeart, IoSearch } from 'react-icons/io5';
+import { IoCartOutline, IoPersonOutline,  IoSearch, IoHeartOutline,IoHomeOutline } from 'react-icons/io5';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import Image from 'next/image';
 import BCA from '@/app/aset/bca.jpg';
@@ -10,6 +10,7 @@ import Indomaret from '@/app/aset/indomaret.png';
 import Alfamart from '@/app/aset/alfamart (1).png';
 import Gamepad from '@/app/aset/PlayStation 5  Wireless Controller.jpg';
 import LCDMonitor from '@/app/aset/monitor.png';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -111,7 +112,12 @@ export default function Checkout() {
           <input type="text" placeholder="Search..." className="w-full outline-none" />
         </div>
         <div className="flex space-x-4">
-          <IoHeart className="text-xl" />
+        <Link href="/Home">
+          <button>
+           <IoHomeOutline className="text-gray-600 text-xl" />
+           </button>
+          </Link>
+          <IoHeartOutline className="text-xl" />
           <IoCartOutline className="text-xl" />
           <IoPersonOutline className="text-xl" />
         </div>
@@ -121,9 +127,9 @@ export default function Checkout() {
         {/* Navigation Links (Placed Above "Detail Pesanan") */}
         <div className="md:col-span-3 mb-6">
           <nav className="flex space-x-6 text-sm font-semibold">
-            <a href="/" className="hover:text-blue-500">Home</a>
+            <a href="Home" className="hover:text-blue-500">Home</a>
             <a href="/product" className="hover:text-blue-500">Product</a>
-            <a href="/cart" className="hover:text-blue-500">View Cart</a>
+            <a href="/Keranjang" className="hover:text-blue-500">View Cart</a>
             <a href="/checkout" className="hover:text-blue-500">Checkout</a>
           </nav>
         </div>
