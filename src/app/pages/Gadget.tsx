@@ -1,24 +1,5 @@
-import React from 'react';  
-import Navbar from './Navbar'; // Import the Navbar component  
-import Image from 'next/image'; // Import the Next.js Image component  
-import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  
-import baju from '@/app/aset/Abercrombie’s $50 Knit Polos Have No Business Being This Good.jpg';  
-import jam from '@/app/aset/Christophe Arden CAF3001 MDBIPBA Jam Tangan Pria.jpg';  
-import tas from '@/app/aset/Clutch Handbag Pria - Tas tangan Clutch Pria _ Pouch dompet Pria ToWn.jpg'  
-import ipat from '@/app/aset/Ikat Pinggang Wanita Sabuk Square Kulit PU Leather Belt Fashion Korea.jpg';   
-import wobeg from '@/app/aset/MEDIUM AVA TRIOMPHE.jpg';  
-import celana from '@/app/aset/Carhartt WIP Landon Pant.jpg';  
-import dipeg from '@/app/aset/Prada Small Logo-plaque.jpg';  
-import shirt from '@/app/aset/Seek Graphic Tee - Litlookz Studio.jpg';  
-import hoodie from '@/app/aset/Oversized Hoodie Washed Grey.jpg';  
-import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
-import samba from '@/app/aset/adidas samba.jpg';  
-import Nike from '@/app/aset/nike.jpg';   
-import speaker from '@/app/aset/speaker.jpg';   
-import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
-import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
-import ps5 from '@/app/aset/ps5.jpg';
+import React from 'react';
+import Image from 'next/image';
 import {
   IoMenu,
   IoSearch,
@@ -31,73 +12,57 @@ import {
   IoHeart,
   IoEye
 } from 'react-icons/io5';
+import gadget from '@/app/aset/gadget.png';   
+import Gadget1 from '@/app/aset/AssetGadget/1.png';
+import Gadget2 from '@/app/aset/AssetGadget/2.png';
+import Gadget3 from '@/app/aset/AssetGadget/3.png';
+import Gadget4 from '@/app/aset/AssetGadget/4.png';
+import Gadget5 from '@/app/aset/AssetGadget/5.png';
+import Gadget6 from '@/app/aset/AssetGadget/6.png';
+import Gadget7 from '@/app/aset/AssetGadget/7.png';
+import Gadget8 from '@/app/aset/AssetGadget/8.png';
+import Gadget9 from '@/app/aset/AssetGadget/9.png';
+import Gadget10 from '@/app/aset/AssetGadget/10.png';
+import Gadget11 from '@/app/aset/AssetGadget/11.png';
+import Gadget12 from '@/app/aset/AssetGadget/12.png';
+import Gadget13 from '@/app/aset/AssetGadget/13.png';
+import Gadget14 from '@/app/aset/AssetGadget/14.png';
+import Gadget15 from '@/app/aset/AssetGadget/15.png';
+import Gadget16 from '@/app/aset/AssetGadget/16.png';
+import Gadget17 from '@/app/aset/AssetGadget/17.png';
+import Gadget18 from '@/app/aset/AssetGadget/18.png';
+import Gadget19 from '@/app/aset/AssetGadget/19.png';
+import Gadget20 from '@/app/aset/AssetGadget/20.png';
+import Gadget21 from '@/app/aset/AssetGadget/21.png';
+import Gadget22 from '@/app/aset/AssetGadget/22.png';
+import Gadget23 from '@/app/aset/AssetGadget/23.png';
+import Gadget24 from '@/app/aset/AssetGadget/24.png';
+import Gadget25 from '@/app/aset/AssetGadget/25.png';
+import Gadget26 from '@/app/aset/AssetGadget/26.png';
+import Gadget27 from '@/app/aset/AssetGadget/27.png';
+import Gadget28 from '@/app/aset/AssetGadget/28.png';
+import Gadget29 from '@/app/aset/AssetGadget/29.png';
+import Gadget30 from '@/app/aset/AssetGadget/30.png';
+import Gadget31 from '@/app/aset/AssetGadget/31.png';
+import Gadget32 from '@/app/aset/AssetGadget/32.png';
+import Gadget33 from '@/app/aset/AssetGadget/33.png';
+import Gadget34 from '@/app/aset/AssetGadget/34.png';
+import Gadget35 from '@/app/aset/AssetGadget/35.png';
+import Gadget36 from '@/app/aset/AssetGadget/36.png';
+import Gadget37 from '@/app/aset/AssetGadget/37.png';
+import Gadget38 from '@/app/aset/AssetGadget/38.png';
+import Gadget39 from '@/app/aset/AssetGadget/39.png';
+import Gadget40 from '@/app/aset/AssetGadget/40.png';
+import Navbar from '@/components/Navbar';
 
-// Define the Fashion component  
-function Fashion() {  
+function Gadget() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}    
-      <nav className="bg-white shadow-sm px-6 py-4">  
-        <div className="max-w-7xl mx-auto">  
-          <div className="flex items-center justify-between">  
-            <div className="flex items-center space-x-4">  
-              <button className="text-gray-600">  
-                <IoMenu className="text-2xl" />  
-              </button>  
-              <h1 className="text-xl font-bold text-black">Grab and Ship</h1>  
-            </div>  
-
-            <div className="flex-1 max-w-xl mx-8">  
-              <div className="relative">  
-                <input  
-                  type="text"  
-                  placeholder="search..."  
-                  className="w-full border border-gray-300 rounded-full py-2 px-4 pr-10"  
-                />  
-                <button className="absolute right-3 top-2.5 text-gray-400">  
-                  <IoSearch className="text-2xl" />  
-                </button>  
-              </div>  
-            </div>  
-
-            <div className="flex items-center gap-4">  
-              <button className="text-black">  
-                <IoHeartOutline className="text-2xl" />  
-              </button>  
-              <button className="text-black">  
-                <IoCartOutline className="text-2xl" />  
-              </button>  
-              <button className="px-4 py-1.5 bg-[#C2A58C] text-white rounded-full text-sm">  
-                Sign up  
-              </button>  
-              <button className="px-4 py-1.5 border border-[#C2A58C] text-[#C2A58C] rounded-full text-sm">  
-                Login  
-              </button>  
-              <button className="text-black">  
-                <IoPersonOutline className="text-2xl" />  
-              </button>  
-            </div>  
-          </div>  
-
-          {/* Category Navigation */}  
-          <div className="mt-4 flex justify-center">  
-            <div className="flex items-center space-x-4 mx-auto">  
-              <button className="px-6 py-2 bg-gray-100 rounded-full text-black hover:bg-gray-200">All Category</button>  
-              <button className="px-6 py-2 bg-gray-100 rounded-full text-black hover:bg-gray-200">Fashion</button>  
-              <button className="px-6 py-2 bg-gray-100 rounded-full text-black hover:bg-[#C2A58C]">Gadget</button>  
-              <button className="px-6 py-2 bg-gray-100 rounded-full text-black hover:bg-gray-200">Aksesoris</button>  
-              <button className="px-6 py-2 bg-gray-100 rounded-full text-black hover:bg-gray-200">Perlengkapan rumah</button>  
-              <button className="px-6 py-2 bg-gray-100 rounded-full text-black hover:bg-gray-200">Lainnya</button>  
-            </div>  
-          </div>  
-        </div>  
-      </nav>  
-
       <main className="max-w-7xl mx-auto px-6 py-8">  
         {/* Hero Banner */}  
         <div className="rounded-lg overflow-hidden mb-8">  
           <Image   
-            src={Nike}  
+            src={gadget}  
             alt="Nike shoes banner"  
             className="w-full h-[400px] object-cover"  
             width={1200}  
@@ -114,51 +79,53 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+            
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Gadget1,  
+                name: "Instant Mini Camera",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Gadget2,  
+                name: "Premium Headphones",  
                 price: 399,  
-                originalPrice: 1960,  
+                originalPrice: 613,  
                 discount: 35,  
                 rating: 4,  
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Gadget3,  
+                name: "Small Microphone Kit",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Gadget4,  
+                name: "Smart Watch Pro",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Gadget5,  
+                name: "iPad Air",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -209,17 +176,17 @@ function Fashion() {
           <div className="grid grid-cols-5 gap-6">  
             {[  
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Gadget6,  
+                name: "HV-G92 Microphone",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Gadget7,  
+                name: "Garmin inReach Mini",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -227,32 +194,33 @@ function Fashion() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Gadget8,  
+                name: "Foldable Keyboard",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Gadget9,  
+                name: "Apple iMac Desktop",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Gadget10,  
+                name: "Gaming PC Setup",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              }  
+              }
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -303,18 +271,19 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+             
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Gadget11,  
+                name: "JBL Black Over-Ear Headphones",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Gadget12,  
+                name: "High-Performance Gaming PC",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -322,32 +291,33 @@ function Fashion() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Gadget13,  
+                name: "Oculus Quest 2 VR Headset",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Gadget14,  
+                name: "Red & Black Wireless Headphones",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Gadget15,  
+                name: "Nintendo gen 2 Switch Console",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+             
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -397,51 +367,52 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+                {  
+                  img: Gadget16,  
+                  name: "Razer Zephyr Smart Mask",  
+                  price: 399,  
+                  originalPrice: 665,  
+                  discount: 40,  
+                  rating: 5,  
+                  reviews: 88  
+                },  
+                {  
+                  img: Gadget17,  
+                  name: "PlayStation 5 Slim",  
+                  price: 399,  
+                  originalPrice: 1960,  
+                  discount: 35,  
+                  rating: 4,  
+                  reviews: 75  
+                },  
+                {  
+                  img: Gadget18,  
+                  name: "Apple AirPods Pro (2nd Gen)",  
+                  price: 399,   
+                  originalPrice: 570,  
+                  discount: 30,  
+                  rating: 5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Gadget19,  
+                  name: "Sony WH-1000XM5 Headphones",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Gadget20,  
+                  name: "Sony PSP Handheld Console",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                }  
+              
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -491,18 +462,19 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Gadget21,  
+                name: "ASUS WiFi 6 Gaming Router",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Gadget22,  
+                name: "Luxury Retro Wireless Mouse",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -510,32 +482,33 @@ function Fashion() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Gadget23,  
+                name: "Acer Aspire 5 Laptop",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Gadget24,  
+                name: "GoPro HERO11 with Tripod",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Gadget25,  
+                name: "Acoustic Energy Bookshelf Speakers",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -586,51 +559,53 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+            
+                {  
+                  img: Gadget26,  
+                  name: "Oculus Quest 2 VR Headset",  
+                  price: 399,  
+                  originalPrice: 665,  
+                  discount: 40,  
+                  rating: 5,  
+                  reviews: 88  
+                },  
+                {  
+                  img: Gadget27,  
+                  name: "Professional Streaming Setup (Microphone & Headphones)",  
+                  price: 399,  
+                  originalPrice: 1960,  
+                  discount: 35,  
+                  rating: 4,  
+                  reviews: 75  
+                },  
+                {  
+                  img: Gadget28,  
+                  name: "Sony FX3 Full-Frame Cinema Camera",  
+                  price: 399,   
+                  originalPrice: 570,  
+                  discount: 30,  
+                  rating: 5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Gadget29,  
+                  name: "Amazon Echo Dot (4th Gen) Smart Speaker",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Gadget30,  
+                  name: "GoPro HERO7 Action Camera with Grip",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                }  
+              
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -679,18 +654,19 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+             
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Gadget31,  
+                name: "Spy Camera USB Charger",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Gadget32,  
+                name: "Anker Travel Power Bank Set",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -698,32 +674,33 @@ function Fashion() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Gadget33,  
+                name: "Marshall Major IV Wireless Headphones",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Gadget34,  
+                name: "Mini Digital Night Vision Camera",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Gadget35,  
+                name: "Philips 3200 Series Fully Automatic Espresso Machine",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -773,18 +750,19 @@ function Fashion() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+            
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Gadget37,  
+                name: "Panasonic High-Power Blender",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Gadget38,  
+                name: "COSORI Digital Air Fryer",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -792,32 +770,33 @@ function Fashion() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Gadget39,  
+                name: "Tineco Smart Cordless Vacuum Cleaner",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Gadget40,  
+                name: "ZEISS ZX1 Full-Frame Digital Camera",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Gadget36,  
+                name: "Sony ZV-1 Vlogging Camera with Tripod",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+          
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -926,5 +905,5 @@ function Fashion() {
   </div>
   );
 }
-  
-export default Fashion;  
+
+export default Gadget;

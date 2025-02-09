@@ -1,5 +1,68 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react';  
+import Navbar from '@/app/components/Navbar';  
+import Image from 'next/image'; // Import the Next.js Image component  
+import Loropiana from '@/app/aset/Loro Piana Shoes.jpg'; // Import the Loro Piana image  
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHeart, FaEye } from 'react-icons/fa'; // Import social media icons  
+
+import aks from '@/app/aset/Aksesoris.png'; 
+
+import Aks1 from '@/app/aset/AssetAksesoris/1.png';
+import Aks2 from '@/app/aset/AssetAksesoris/2.png';
+import Aks3 from '@/app/aset/AssetAksesoris/3.png';
+import Aks4 from '@/app/aset/AssetAksesoris/4.png';
+import Aks5 from '@/app/aset/AssetAksesoris/5.png';
+import Aks6 from '@/app/aset/AssetAksesoris/6.png';
+import Aks7 from '@/app/aset/AssetAksesoris/7.png';
+import Aks8 from '@/app/aset/AssetAksesoris/8.png';
+import Aks9 from '@/app/aset/AssetAksesoris/9.png';
+import Aks10 from '@/app/aset/AssetAksesoris/10.png';
+import Aks11 from '@/app/aset/AssetAksesoris/11.png';
+import Aks12 from '@/app/aset/AssetAksesoris/12.png';
+import Aks13 from '@/app/aset/AssetAksesoris/13.png';
+import Aks14 from '@/app/aset/AssetAksesoris/14.png';
+import Aks15 from '@/app/aset/AssetAksesoris/15.png';
+import Aks16 from '@/app/aset/AssetAksesoris/16.png';
+import Aks17 from '@/app/aset/AssetAksesoris/17.png';
+import Aks18 from '@/app/aset/AssetAksesoris/18.png';
+import Aks19 from '@/app/aset/AssetAksesoris/19.png';
+import Aks20 from '@/app/aset/AssetAksesoris/20.png';
+import Aks21 from '@/app/aset/AssetAksesoris/21.png';
+import Aks22 from '@/app/aset/AssetAksesoris/22.png';
+import Aks23 from '@/app/aset/AssetAksesoris/23.png';
+import Aks24 from '@/app/aset/AssetAksesoris/24.png';
+import Aks25 from '@/app/aset/AssetAksesoris/25.png';
+import Aks26 from '@/app/aset/AssetAksesoris/26.png';
+import Aks27 from '@/app/aset/AssetAksesoris/27.png';
+import Aks28 from '@/app/aset/AssetAksesoris/28.png';
+import Aks29 from '@/app/aset/AssetAksesoris/29.png';
+import Aks30 from '@/app/aset/AssetAksesoris/30.png';
+import Aks31 from '@/app/aset/AssetAksesoris/31.png';
+import Aks32 from '@/app/aset/AssetAksesoris/32.png';
+import Aks33 from '@/app/aset/AssetAksesoris/33.png';
+import Aks34 from '@/app/aset/AssetAksesoris/34.png';
+import Aks35 from '@/app/aset/AssetAksesoris/35.png';
+import Aks36 from '@/app/aset/AssetAksesoris/36.png';
+import Aks37 from '@/app/aset/AssetAksesoris/37.png';
+import Aks38 from '@/app/aset/AssetAksesoris/38.png';
+import Aks39 from '@/app/aset/AssetAksesoris/39.png';
+import Aks40 from '@/app/aset/AssetAksesoris/40.png';
+
+import baju from '@/app/aset/Abercrombie’s $50 Knit Polos Have No Business Being This Good.jpg';  
+import jam from '@/app/aset/Christophe Arden CAF3001 MDBIPBA Jam Tangan Pria.jpg';  
+import tas from '@/app/aset/Clutch Handbag Pria - Tas tangan Clutch Pria _ Pouch dompet Pria ToWn.jpg'  
+import ipat from '@/app/aset/Ikat Pinggang Wanita Sabuk Square Kulit PU Leather Belt Fashion Korea.jpg';   
+import wobeg from '@/app/aset/MEDIUM AVA TRIOMPHE.jpg';  
+import celana from '@/app/aset/Carhartt WIP Landon Pant.jpg';  
+import dipeg from '@/app/aset/Prada Small Logo-plaque.jpg';  
+import shirt from '@/app/aset/Seek Graphic Tee - Litlookz Studio.jpg';  
+import hoodie from '@/app/aset/Oversized Hoodie Washed Grey.jpg';  
+import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
+import samba from '@/app/aset/adidas samba.jpg';  
+import Nike from '@/app/aset/nike.jpg';   
+import speaker from '@/app/aset/speaker.jpg';   
+import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
+import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
+import ps5 from '@/app/aset/ps5.jpg';
 import {
   IoMenu,
   IoSearch,
@@ -12,15 +75,9 @@ import {
   IoHeart,
   IoEye
 } from 'react-icons/io5';
-import rapllauren from '@/app/aset/Ralph Lauren Polo Shirt.jpg';    
-import samba from '@/app/aset/adidas samba.jpg';  
-import Nike from '@/app/aset/nike.jpg';   
-import speaker from '@/app/aset/speaker.jpg';   
-import stik from '@/app/aset/PlayStation 5  Wireless Controller.jpg';    
-import parfum from '@/app/aset/Eros EDP 100 ml.jpg';  
-import ps5 from '@/app/aset/ps5.jpg';
 
-function Gadget() {
+// Define the Fashion component  
+function Fashion() {  
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}    
@@ -84,7 +141,7 @@ function Gadget() {
         {/* Hero Banner */}  
         <div className="rounded-lg overflow-hidden mb-8">  
           <Image   
-            src={Nike}  
+            src={aks}  
             alt="Nike shoes banner"  
             className="w-full h-[400px] object-cover"  
             width={1200}  
@@ -100,52 +157,53 @@ function Gadget() {
           </div>
     
           <div className="grid grid-cols-5 gap-6">  
-            {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+            {[ 
+                {  
+                  img: Aks1,  
+                  name: "Minimalist Silver Frame Glasses",  
+                  price: 399,  
+                  originalPrice: 665,  
+                  discount: 40,  
+                  rating: 5,  
+                  reviews: 88  
+                },  
+                {  
+                  img: Aks2,  
+                  name: "Black Velvet Choker Necklace",  
+                  price: 399,  
+                  originalPrice: 1960,  
+                  discount: 35,  
+                  rating: 4,  
+                  reviews: 75  
+                },  
+                {  
+                  img: Aks3,  
+                  name: "Luxury Rose Gold Makeup Brush",  
+                  price: 399,   
+                  originalPrice: 570,  
+                  discount: 30,  
+                  rating: 5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Aks4,  
+                  name: "Elegant Silver Star Bracelet Set",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                },  
+                {  
+                  img: Aks5,  
+                  name: "Luxury Silver Heart Ring",  
+                  price: 399,  
+                  originalPrice: 532,  
+                  discount: 25,  
+                  rating: 4.5,  
+                  reviews: 99  
+                }  
+              
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -196,17 +254,17 @@ function Gadget() {
           <div className="grid grid-cols-5 gap-6">  
             {[  
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Aks6,  
+                name: "Silver Heart Pink Gemstone Ring",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Aks7,  
+                name: "Luxury Rose Gold Pen with Crown Top",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -214,32 +272,32 @@ function Gadget() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Aks8,  
+                name: "Light Blue Vintage Baseball Cap",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Aks9,  
+                name: "Gothic Black Bat Ring",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Aks10,  
+                name: "Cartier Love Gold Bracelet",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
-              }  
+              } 
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -290,51 +348,53 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+          
+            {  
+              img: Aks11,  
+              name: "Elegant Silver Charm Bracelet",  
+              price: 399,  
+              originalPrice: 665,  
+              discount: 40,  
+              rating: 5,  
+              reviews: 88  
+            },  
+            {  
+              img: Aks12,  
+              name: "Chunky Chain Ring",  
+              price: 399,  
+              originalPrice: 1960,  
+              discount: 35,  
+              rating: 4,  
+              reviews: 75  
+            },  
+            {  
+              img: Aks13,  
+              name: "Adjustable Minimalist Open Ring",  
+              price: 399,   
+              originalPrice: 570,  
+              discount: 30,  
+              rating: 5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks14,  
+              name: "Beaded Butterfly Bracelet",  
+              price: 399,  
+              originalPrice: 532,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks15,  
+              name: "Silver Butterfly Stud Earrings",  
+              price: 399,  
+              originalPrice: 532,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            }  
+          
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -384,18 +444,19 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+             
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Aks16,  
+                name: "Minimalist Silver Bead Bracelet",  
                 price: 399,  
-                originalPrice: 320,  
+                originalPrice: 665,  
                 discount: 40,  
                 rating: 5,  
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Aks17,  
+                name: "Elegant Black Clover Ring",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -403,32 +464,34 @@ function Gadget() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Aks18,  
+                name: "Gold Eiffel Tower Pendant Necklace",  
                 price: 399,   
-                originalPrice: 370,  
+                originalPrice: 570,  
                 discount: 30,  
                 rating: 5,  
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Aks19,  
+                name: "Silver Heart Ruby Gemstone Ring",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Aks20,  
+                name: "Delicate Silver Leaf Bracelet",  
                 price: 399,  
-                originalPrice: 375,  
+                originalPrice: 532,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+            
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -478,9 +541,10 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Aks21,  
+                name: "Rockstar Guitar Keychain Set",  
                 price: 399,  
                 originalPrice: 320,  
                 discount: 40,  
@@ -488,8 +552,8 @@ function Gadget() {
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Aks22,  
+                name: "Celestial Star Charm Keychain",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -497,8 +561,8 @@ function Gadget() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Aks23,  
+                name: "Elegant Blue Sapphire Ring",  
                 price: 399,   
                 originalPrice: 370,  
                 discount: 30,  
@@ -506,8 +570,8 @@ function Gadget() {
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Aks24,  
+                name: "Gold Heart Pearl Earrings",  
                 price: 399,  
                 originalPrice: 375,  
                 discount: 25,  
@@ -515,14 +579,15 @@ function Gadget() {
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Aks25,  
+                name: "Minimalist Black Rose Temporary Tattoo",  
                 price: 399,  
                 originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -573,9 +638,10 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+            
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Aks26,  
+                name: "Elegant Amethyst Heart Ring",  
                 price: 399,  
                 originalPrice: 320,  
                 discount: 40,  
@@ -583,8 +649,8 @@ function Gadget() {
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Aks27,  
+                name: "Retro Vinyl Record Keychain Set",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -592,8 +658,8 @@ function Gadget() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Aks28,  
+                name: "Blue Sapphire Heart Ring",  
                 price: 399,   
                 originalPrice: 370,  
                 discount: 30,  
@@ -601,8 +667,8 @@ function Gadget() {
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Aks29,  
+                name: "Bohemian Handmade Beaded Bracelet",  
                 price: 399,  
                 originalPrice: 375,  
                 discount: 25,  
@@ -610,14 +676,15 @@ function Gadget() {
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Aks30,  
+                name: "Minimalist Pink Wristwatch",  
                 price: 399,  
                 originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -666,9 +733,10 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
+             
               {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
+                img: Aks31,  
+                name: "Minimalist Star Ring",  
                 price: 399,  
                 originalPrice: 320,  
                 discount: 40,  
@@ -676,8 +744,8 @@ function Gadget() {
                 reviews: 88  
               },  
               {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
+                img: Aks32,  
+                name: "Golden Music Charm Keychain",  
                 price: 399,  
                 originalPrice: 1960,  
                 discount: 35,  
@@ -685,8 +753,8 @@ function Gadget() {
                 reviews: 75  
               },  
               {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
+                img: Aks33,  
+                name: "Classic Trucker Cap - Black & Red",  
                 price: 399,   
                 originalPrice: 370,  
                 discount: 30,  
@@ -694,8 +762,8 @@ function Gadget() {
                 reviews: 99  
               },  
               {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
+                img: Aks34,  
+                name: "Elegant Rose Gold Wristwatch",  
                 price: 399,  
                 originalPrice: 375,  
                 discount: 25,  
@@ -703,14 +771,16 @@ function Gadget() {
                 reviews: 99  
               },  
               {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
+                img: Aks35,  
+                name: "Silver Hoop Bracelet Set",  
                 price: 399,  
                 originalPrice: 375,  
                 discount: 25,  
                 rating: 4.5,  
                 reviews: 99  
               }  
+            
+            
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -760,51 +830,53 @@ function Gadget() {
     
           <div className="grid grid-cols-5 gap-6">  
             {[  
-              {  
-                img: stik,  
-                name: "HAVIT HV-G92 Gamepad",  
-                price: 399,  
-                originalPrice: 320,  
-                discount: 40,  
-                rating: 5,  
-                reviews: 88  
-              },  
-              {  
-                img: stik,  
-                name: "AK-900 Wired Keyboard",  
-                price: 399,  
-                originalPrice: 1960,  
-                discount: 35,  
-                rating: 4,  
-                reviews: 75  
-              },  
-              {  
-                img: stik,  
-                name: "IPS LCD Gaming Monitor",  
-                price: 399,   
-                originalPrice: 370,  
-                discount: 30,  
-                rating: 5,  
-                reviews: 99  
-              },  
-              {  
-                img: parfum,  
-                name: "S-Series Comfort Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              },  
-              {  
-                img: rapllauren,  
-                name: "S-Series Office Chair",  
-                price: 399,  
-                originalPrice: 375,  
-                discount: 25,  
-                rating: 4.5,  
-                reviews: 99  
-              }  
+           
+            {  
+              img: Aks36,  
+              name: "Black Heart Hair Clip",  
+              price: 399,  
+              originalPrice: 320,  
+              discount: 40,  
+              rating: 5,  
+              reviews: 88  
+            },  
+            {  
+              img: Aks37,  
+              name: "Mini Guitar Keychain",  
+              price: 399,  
+              originalPrice: 1960,  
+              discount: 35,  
+              rating: 4,  
+              reviews: 75  
+            },  
+            {  
+              img: Aks38,  
+              name: "Gozeal Portable Storage Pouch",  
+              price: 399,   
+              originalPrice: 370,  
+              discount: 30,  
+              rating: 5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks39,  
+              name: "Cute Bunny Ears Headband",  
+              price: 399,  
+              originalPrice: 375,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            },  
+            {  
+              img: Aks40,  
+              name: "Funny Pizza Cowboy Hat",  
+              price: 399,  
+              originalPrice: 375,  
+              discount: 25,  
+              rating: 4.5,  
+              reviews: 99  
+            }  
+          
             ].map((item, index) => (  
               <div key={index} className="bg-white rounded-sm border border-gray-100 p-4">  
                 <div className="relative">  
@@ -913,5 +985,5 @@ function Gadget() {
   </div>
   );
 }
-
-export default Gadget;
+  
+export default Fashion;  
